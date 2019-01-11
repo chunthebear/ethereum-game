@@ -1,0 +1,103 @@
+{
+  "contractName": "Game",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058205c4814c12e8eff641fbc5da54de174bb45f679a4a0287de6488198f92e8dbc990029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058205c4814c12e8eff641fbc5da54de174bb45f679a4a0287de6488198f92e8dbc990029",
+  "sourceMap": "27:23:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:23:5;;;;;;;",
+  "deployedSourceMap": "27:23:5:-;;;;;",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Game{\r\n    \r\n}",
+  "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Game.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Game.sol",
+    "exportedSymbols": {
+      "Game": [
+        26
+      ]
+    },
+    "id": 27,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 25,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 26,
+        "linearizedBaseContracts": [
+          26
+        ],
+        "name": "Game",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 27,
+        "src": "27:23:5"
+      }
+    ],
+    "src": "0:50:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Game.sol",
+    "exportedSymbols": {
+      "Game": [
+        26
+      ]
+    },
+    "id": 27,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 25,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 26,
+        "linearizedBaseContracts": [
+          26
+        ],
+        "name": "Game",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 27,
+        "src": "27:23:5"
+      }
+    ],
+    "src": "0:50:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-01-11T02:45:25.303Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

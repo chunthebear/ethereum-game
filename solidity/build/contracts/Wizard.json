@@ -1,0 +1,169 @@
+{
+  "contractName": "Wizard",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a7230582014881b804ea1d01083c0affb335cae536aa1742f96683f247c47c026dc052b700029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a7230582014881b804ea1d01083c0affb335cae536aa1742f96683f247c47c026dc052b700029",
+  "sourceMap": "53:35:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:35:4;;;;;;;",
+  "deployedSourceMap": "53:35:4:-;;;;;",
+  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Class.sol\";\r\n\r\ncontract Wizard is Class {\r\n    \r\n}",
+  "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Classes/Wizard.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Classes/Wizard.sol",
+    "exportedSymbols": {
+      "Wizard": [
+        23
+      ]
+    },
+    "id": 24,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 19,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:4"
+      },
+      {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Class.sol",
+        "file": "../Class.sol",
+        "id": 20,
+        "nodeType": "ImportDirective",
+        "scope": 24,
+        "sourceUnit": 6,
+        "src": "27:22:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 21,
+              "name": "Class",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 5,
+              "src": "72:5:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Class_$5",
+                "typeString": "contract Class"
+              }
+            },
+            "id": 22,
+            "nodeType": "InheritanceSpecifier",
+            "src": "72:5:4"
+          }
+        ],
+        "contractDependencies": [
+          5
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 23,
+        "linearizedBaseContracts": [
+          23,
+          5
+        ],
+        "name": "Wizard",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 24,
+        "src": "53:35:4"
+      }
+    ],
+    "src": "0:88:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Classes/Wizard.sol",
+    "exportedSymbols": {
+      "Wizard": [
+        23
+      ]
+    },
+    "id": 24,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 19,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:4"
+      },
+      {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Class.sol",
+        "file": "../Class.sol",
+        "id": 20,
+        "nodeType": "ImportDirective",
+        "scope": 24,
+        "sourceUnit": 6,
+        "src": "27:22:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 21,
+              "name": "Class",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 5,
+              "src": "72:5:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Class_$5",
+                "typeString": "contract Class"
+              }
+            },
+            "id": 22,
+            "nodeType": "InheritanceSpecifier",
+            "src": "72:5:4"
+          }
+        ],
+        "contractDependencies": [
+          5
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 23,
+        "linearizedBaseContracts": [
+          23,
+          5
+        ],
+        "name": "Wizard",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 24,
+        "src": "53:35:4"
+      }
+    ],
+    "src": "0:88:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-01-11T02:45:25.303Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "contractName": "Spell",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058203d6dd80f4a66ccf74255e0dce4f70b63c280fe4600d11c8923b6e05aa0f134d50029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058203d6dd80f4a66ccf74255e0dce4f70b63c280fe4600d11c8923b6e05aa0f134d50029",
+  "sourceMap": "27:25:7:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:25:7;;;;;;;",
+  "deployedSourceMap": "27:25:7:-;;;;;",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ninterface Spell{\r\n    \r\n}",
+  "sourcePath": "C:\\Users\\Yichun\\Documents\\Projects\\Programming\\ethereum-game\\solidity\\contracts\\Spell.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spell.sol",
+    "exportedSymbols": {
+      "Spell": [
+        86
+      ]
+    },
+    "id": 87,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 85,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:7"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 86,
+        "linearizedBaseContracts": [
+          86
+        ],
+        "name": "Spell",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 87,
+        "src": "27:25:7"
+      }
+    ],
+    "src": "0:52:7"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spell.sol",
+    "exportedSymbols": {
+      "Spell": [
+        86
+      ]
+    },
+    "id": 87,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 85,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:7"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 86,
+        "linearizedBaseContracts": [
+          86
+        ],
+        "name": "Spell",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 87,
+        "src": "27:25:7"
+      }
+    ],
+    "src": "0:52:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-01-11T02:47:48.151Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

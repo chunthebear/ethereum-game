@@ -1,0 +1,103 @@
+{
+  "contractName": "Character",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820a7b3a7b36bf9b95d459f58c4c1bd542fd942ede91e26ba1a166907f6da41bedf0029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820a7b3a7b36bf9b95d459f58c4c1bd542fd942ede91e26ba1a166907f6da41bedf0029",
+  "sourceMap": "27:24:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:24:0;;;;;;;",
+  "deployedSourceMap": "27:24:0:-;;;;;",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Character{\r\n\r\n}",
+  "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Character.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Character.sol",
+    "exportedSymbols": {
+      "Character": [
+        2
+      ]
+    },
+    "id": 3,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2,
+        "linearizedBaseContracts": [
+          2
+        ],
+        "name": "Character",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 3,
+        "src": "27:24:0"
+      }
+    ],
+    "src": "0:51:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Character.sol",
+    "exportedSymbols": {
+      "Character": [
+        2
+      ]
+    },
+    "id": 3,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2,
+        "linearizedBaseContracts": [
+          2
+        ],
+        "name": "Character",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 3,
+        "src": "27:24:0"
+      }
+    ],
+    "src": "0:51:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-01-11T02:45:25.302Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

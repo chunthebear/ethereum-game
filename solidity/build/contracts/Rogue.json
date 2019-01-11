@@ -1,0 +1,169 @@
+{
+  "contractName": "Rogue",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820ee5e58e5b239974fe8d0811bfaca241cc3ee13ceb77d1b04db5344298b9b675e0029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820ee5e58e5b239974fe8d0811bfaca241cc3ee13ceb77d1b04db5344298b9b675e0029",
+  "sourceMap": "53:33:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:33:3;;;;;;;",
+  "deployedSourceMap": "53:33:3:-;;;;;",
+  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Class.sol\";\r\n\r\ncontract Rogue is Class{\r\n    \r\n}",
+  "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Classes/Rogue.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Classes/Rogue.sol",
+    "exportedSymbols": {
+      "Rogue": [
+        17
+      ]
+    },
+    "id": 18,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Class.sol",
+        "file": "../Class.sol",
+        "id": 14,
+        "nodeType": "ImportDirective",
+        "scope": 18,
+        "sourceUnit": 6,
+        "src": "27:22:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 15,
+              "name": "Class",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 5,
+              "src": "71:5:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Class_$5",
+                "typeString": "contract Class"
+              }
+            },
+            "id": 16,
+            "nodeType": "InheritanceSpecifier",
+            "src": "71:5:3"
+          }
+        ],
+        "contractDependencies": [
+          5
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 17,
+        "linearizedBaseContracts": [
+          17,
+          5
+        ],
+        "name": "Rogue",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 18,
+        "src": "53:33:3"
+      }
+    ],
+    "src": "0:86:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Classes/Rogue.sol",
+    "exportedSymbols": {
+      "Rogue": [
+        17
+      ]
+    },
+    "id": 18,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Class.sol",
+        "file": "../Class.sol",
+        "id": 14,
+        "nodeType": "ImportDirective",
+        "scope": 18,
+        "sourceUnit": 6,
+        "src": "27:22:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 15,
+              "name": "Class",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 5,
+              "src": "71:5:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Class_$5",
+                "typeString": "contract Class"
+              }
+            },
+            "id": 16,
+            "nodeType": "InheritanceSpecifier",
+            "src": "71:5:3"
+          }
+        ],
+        "contractDependencies": [
+          5
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 17,
+        "linearizedBaseContracts": [
+          17,
+          5
+        ],
+        "name": "Rogue",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 18,
+        "src": "53:33:3"
+      }
+    ],
+    "src": "0:86:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-01-11T02:45:25.303Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
