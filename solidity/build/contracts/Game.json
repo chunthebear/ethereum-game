@@ -1,24 +1,53 @@
 {
   "contractName": "Game",
-  "abi": [],
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058205c4814c12e8eff641fbc5da54de174bb45f679a4a0287de6488198f92e8dbc990029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058205c4814c12e8eff641fbc5da54de174bb45f679a4a0287de6488198f92e8dbc990029",
-  "sourceMap": "27:23:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:23:5;;;;;;;",
-  "deployedSourceMap": "27:23:5:-;;;;;",
-  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Game{\r\n    \r\n}",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "name": "createCharacter",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getCharacter",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610621806100206000396000f3fe60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631e8237df146100515780637e6cc17f146100a8575b600080fd5b34801561005d57600080fd5b50610066610170565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100b457600080fd5b5061016e600480360360208110156100cb57600080fd5b81019080803590602001906401000000008111156100e857600080fd5b8201836020820111156100fa57600080fd5b8035906020019184600183028401116401000000008311171561011c57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506101d6565b005b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b806101df6102ea565b8080602001828103825283818151815260200191508051906020019080838360005b8381101561021c578082015181840152602081019050610201565b50505050905090810190601f1680156102495780820380516001836020036101000a031916815260200191505b5092505050604051809103906000f08015801561026a573d6000803e3d6000fd5b506000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6040516102fb806102fb8339019056fe608060405234801561001057600080fd5b506040516102fb3803806102fb8339810180604052602081101561003357600080fd5b81019080805164010000000081111561004b57600080fd5b8281019050602081018481111561006157600080fd5b815185600182028301116401000000008211171561007e57600080fd5b5050929190505050806000908051906020019061009c9291906100a3565b5050610148565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100e457805160ff1916838001178555610112565b82800160010185558215610112579182015b828111156101115782518255916020019190600101906100f6565b5b50905061011f9190610123565b5090565b61014591905b80821115610141576000816000905550600101610129565b5090565b90565b6101a4806101576000396000f3fe608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c14610046575b600080fd5b34801561005257600080fd5b5061005b6100d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009b578082015181840152602081019050610080565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b606060008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561016e5780601f106101435761010080835404028352916020019161016e565b820191906000526020600020905b81548152906001019060200180831161015157829003601f168201915b505050505090509056fea165627a7a7230582044fda74fdc9b396df52749ba45ad56d393fa25c1d823beddf5b4f01e19df99060029a165627a7a723058209fc7e0a70f66c31e71354a4af86adbdae71c51fb485db9b80eff58f5914944310029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631e8237df146100515780637e6cc17f146100a8575b600080fd5b34801561005d57600080fd5b50610066610170565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100b457600080fd5b5061016e600480360360208110156100cb57600080fd5b81019080803590602001906401000000008111156100e857600080fd5b8201836020820111156100fa57600080fd5b8035906020019184600183028401116401000000008311171561011c57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506101d6565b005b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b806101df6102ea565b8080602001828103825283818151815260200191508051906020019080838360005b8381101561021c578082015181840152602081019050610201565b50505050905090810190601f1680156102495780820380516001836020036101000a031916815260200191505b5092505050604051809103906000f08015801561026a573d6000803e3d6000fd5b506000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6040516102fb806102fb8339019056fe608060405234801561001057600080fd5b506040516102fb3803806102fb8339810180604052602081101561003357600080fd5b81019080805164010000000081111561004b57600080fd5b8281019050602081018481111561006157600080fd5b815185600182028301116401000000008211171561007e57600080fd5b5050929190505050806000908051906020019061009c9291906100a3565b5050610148565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100e457805160ff1916838001178555610112565b82800160010185558215610112579182015b828111156101115782518255916020019190600101906100f6565b5b50905061011f9190610123565b5090565b61014591905b80821115610141576000816000905550600101610129565b5090565b90565b6101a4806101576000396000f3fe608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c14610046575b600080fd5b34801561005257600080fd5b5061005b6100d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009b578082015181840152602081019050610080565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b606060008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561016e5780601f106101435761010080835404028352916020019161016e565b820191906000526020600020905b81548152906001019060200180831161015157829003601f168201915b505050505090509056fea165627a7a7230582044fda74fdc9b396df52749ba45ad56d393fa25c1d823beddf5b4f01e19df99060029a165627a7a723058209fc7e0a70f66c31e71354a4af86adbdae71c51fb485db9b80eff58f5914944310029",
+  "sourceMap": "56:309:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;56:309:5;;;;;;;",
+  "deployedSourceMap": "56:309:5:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;258:104;;8:9:-1;5:2;;;30:1;27;20:12;5:2;258:104:5;;;;;;;;;;;;;;;;;;;;;;;;;;;134:116;;8:9:-1;5:2;;;30:1;27;20:12;5:2;134:116:5;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;134:116:5;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;134:116:5;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;134:116:5;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;134:116:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;134:116:5;;;;;;;;;;;;;;;;;;258:104;303:9;331:11;:23;343:10;331:23;;;;;;;;;;;;;;;;;;;;;;;;;324:30;;258:104;:::o;134:116::-;237:4;223:19;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;223:19:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;223:19:5;197:11;:23;209:10;197:23;;;;;;;;;;;;;;;;:45;;;;;;;;;;;;;;;;;;134:116;:::o;56:309::-;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"./Character.sol\";\r\n\r\ncontract Game{\r\n    mapping(address => Character) private _characters;\r\n\r\n    function createCharacter(string memory name) public {\r\n        _characters[msg.sender] = new Character(name);\r\n    }\r\n\r\n    function getCharacter() public view returns (Character){\r\n        return _characters[msg.sender];\r\n    }\r\n}",
   "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Game.sol",
   "ast": {
     "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Game.sol",
     "exportedSymbols": {
       "Game": [
-        26
+        78
       ]
     },
-    "id": 27,
+    "id": 79,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 25,
+        "id": 45,
         "literals": [
           "solidity",
           "^",
@@ -29,36 +58,419 @@
         "src": "0:23:5"
       },
       {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Character.sol",
+        "file": "./Character.sol",
+        "id": 46,
+        "nodeType": "ImportDirective",
+        "scope": 79,
+        "sourceUnit": 23,
+        "src": "27:25:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
         "baseContracts": [],
-        "contractDependencies": [],
+        "contractDependencies": [
+          22
+        ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 26,
+        "id": 78,
         "linearizedBaseContracts": [
-          26
+          78
         ],
         "name": "Game",
         "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 27,
-        "src": "27:23:5"
+        "nodes": [
+          {
+            "constant": false,
+            "id": 50,
+            "name": "_characters",
+            "nodeType": "VariableDeclaration",
+            "scope": 78,
+            "src": "76:49:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_contract$_Character_$22_$",
+              "typeString": "mapping(address => contract Character)"
+            },
+            "typeName": {
+              "id": 49,
+              "keyType": {
+                "id": 47,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "84:7:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "76:29:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_contract$_Character_$22_$",
+                "typeString": "mapping(address => contract Character)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 48,
+                "name": "Character",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 22,
+                "src": "95:9:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_Character_$22",
+                  "typeString": "contract Character"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 65,
+              "nodeType": "Block",
+              "src": "186:64:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 63,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 55,
+                        "name": "_characters",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50,
+                        "src": "197:11:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_contract$_Character_$22_$",
+                          "typeString": "mapping(address => contract Character)"
+                        }
+                      },
+                      "id": 58,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 56,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 171,
+                          "src": "209:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 57,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "209:10:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "197:23:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Character_$22",
+                        "typeString": "contract Character"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 61,
+                          "name": "name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 52,
+                          "src": "237:4:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 60,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "223:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$returns$_t_contract$_Character_$22_$",
+                          "typeString": "function (string memory) returns (contract Character)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 59,
+                          "name": "Character",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 22,
+                          "src": "227:9:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_Character_$22",
+                            "typeString": "contract Character"
+                          }
+                        }
+                      },
+                      "id": 62,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "223:19:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Character_$22",
+                        "typeString": "contract Character"
+                      }
+                    },
+                    "src": "197:45:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Character_$22",
+                      "typeString": "contract Character"
+                    }
+                  },
+                  "id": 64,
+                  "nodeType": "ExpressionStatement",
+                  "src": "197:45:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 66,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createCharacter",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 53,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52,
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 66,
+                  "src": "159:18:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 51,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "159:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "158:20:5"
+            },
+            "returnParameters": {
+              "id": 54,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "186:0:5"
+            },
+            "scope": 78,
+            "src": "134:116:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 76,
+              "nodeType": "Block",
+              "src": "313:49:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 71,
+                      "name": "_characters",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 50,
+                      "src": "331:11:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_address_$_t_contract$_Character_$22_$",
+                        "typeString": "mapping(address => contract Character)"
+                      }
+                    },
+                    "id": 74,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 72,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 171,
+                        "src": "343:3:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 73,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "343:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "331:23:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Character_$22",
+                      "typeString": "contract Character"
+                    }
+                  },
+                  "functionReturnParameters": 70,
+                  "id": 75,
+                  "nodeType": "Return",
+                  "src": "324:30:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 77,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCharacter",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 67,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "279:2:5"
+            },
+            "returnParameters": {
+              "id": 70,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 69,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 77,
+                  "src": "303:9:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Character_$22",
+                    "typeString": "contract Character"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 68,
+                    "name": "Character",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 22,
+                    "src": "303:9:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Character_$22",
+                      "typeString": "contract Character"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "302:11:5"
+            },
+            "scope": 78,
+            "src": "258:104:5",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 79,
+        "src": "56:309:5"
       }
     ],
-    "src": "0:50:5"
+    "src": "0:365:5"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Game.sol",
     "exportedSymbols": {
       "Game": [
-        26
+        78
       ]
     },
-    "id": 27,
+    "id": 79,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 25,
+        "id": 45,
         "literals": [
           "solidity",
           "^",
@@ -69,23 +481,406 @@
         "src": "0:23:5"
       },
       {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Character.sol",
+        "file": "./Character.sol",
+        "id": 46,
+        "nodeType": "ImportDirective",
+        "scope": 79,
+        "sourceUnit": 23,
+        "src": "27:25:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
         "baseContracts": [],
-        "contractDependencies": [],
+        "contractDependencies": [
+          22
+        ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 26,
+        "id": 78,
         "linearizedBaseContracts": [
-          26
+          78
         ],
         "name": "Game",
         "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 27,
-        "src": "27:23:5"
+        "nodes": [
+          {
+            "constant": false,
+            "id": 50,
+            "name": "_characters",
+            "nodeType": "VariableDeclaration",
+            "scope": 78,
+            "src": "76:49:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_contract$_Character_$22_$",
+              "typeString": "mapping(address => contract Character)"
+            },
+            "typeName": {
+              "id": 49,
+              "keyType": {
+                "id": 47,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "84:7:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "76:29:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_contract$_Character_$22_$",
+                "typeString": "mapping(address => contract Character)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 48,
+                "name": "Character",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 22,
+                "src": "95:9:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_Character_$22",
+                  "typeString": "contract Character"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 65,
+              "nodeType": "Block",
+              "src": "186:64:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 63,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 55,
+                        "name": "_characters",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 50,
+                        "src": "197:11:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_contract$_Character_$22_$",
+                          "typeString": "mapping(address => contract Character)"
+                        }
+                      },
+                      "id": 58,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 56,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 171,
+                          "src": "209:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 57,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "209:10:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "197:23:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Character_$22",
+                        "typeString": "contract Character"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 61,
+                          "name": "name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 52,
+                          "src": "237:4:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 60,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "223:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$returns$_t_contract$_Character_$22_$",
+                          "typeString": "function (string memory) returns (contract Character)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 59,
+                          "name": "Character",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 22,
+                          "src": "227:9:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_Character_$22",
+                            "typeString": "contract Character"
+                          }
+                        }
+                      },
+                      "id": 62,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "223:19:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Character_$22",
+                        "typeString": "contract Character"
+                      }
+                    },
+                    "src": "197:45:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Character_$22",
+                      "typeString": "contract Character"
+                    }
+                  },
+                  "id": 64,
+                  "nodeType": "ExpressionStatement",
+                  "src": "197:45:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 66,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createCharacter",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 53,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52,
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 66,
+                  "src": "159:18:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 51,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "159:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "158:20:5"
+            },
+            "returnParameters": {
+              "id": 54,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "186:0:5"
+            },
+            "scope": 78,
+            "src": "134:116:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 76,
+              "nodeType": "Block",
+              "src": "313:49:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 71,
+                      "name": "_characters",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 50,
+                      "src": "331:11:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_address_$_t_contract$_Character_$22_$",
+                        "typeString": "mapping(address => contract Character)"
+                      }
+                    },
+                    "id": 74,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 72,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 171,
+                        "src": "343:3:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 73,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "343:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "331:23:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Character_$22",
+                      "typeString": "contract Character"
+                    }
+                  },
+                  "functionReturnParameters": 70,
+                  "id": 75,
+                  "nodeType": "Return",
+                  "src": "324:30:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 77,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCharacter",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 67,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "279:2:5"
+            },
+            "returnParameters": {
+              "id": 70,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 69,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 77,
+                  "src": "303:9:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Character_$22",
+                    "typeString": "contract Character"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 68,
+                    "name": "Character",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 22,
+                    "src": "303:9:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Character_$22",
+                      "typeString": "contract Character"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "302:11:5"
+            },
+            "scope": 78,
+            "src": "258:104:5",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 79,
+        "src": "56:309:5"
       }
     ],
-    "src": "0:50:5"
+    "src": "0:365:5"
   },
   "compiler": {
     "name": "solc",
@@ -93,7 +888,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-11T02:45:25.303Z",
+  "updatedAt": "2019-01-11T16:53:03.209Z",
   "devdoc": {
     "methods": {}
   },

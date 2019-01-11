@@ -11,14 +11,14 @@
     "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Class.sol",
     "exportedSymbols": {
       "Class": [
-        5
+        25
       ]
     },
-    "id": 6,
+    "id": 26,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4,
+        "id": 24,
         "literals": [
           "solidity",
           "^",
@@ -34,14 +34,14 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 5,
+        "id": 25,
         "linearizedBaseContracts": [
-          5
+          25
         ],
         "name": "Class",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 6,
+        "scope": 26,
         "src": "27:25:1"
       }
     ],
@@ -51,14 +51,14 @@
     "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Class.sol",
     "exportedSymbols": {
       "Class": [
-        5
+        25
       ]
     },
-    "id": 6,
+    "id": 26,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4,
+        "id": 24,
         "literals": [
           "solidity",
           "^",
@@ -74,14 +74,14 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 5,
+        "id": 25,
         "linearizedBaseContracts": [
-          5
+          25
         ],
         "name": "Class",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 6,
+        "scope": 26,
         "src": "27:25:1"
       }
     ],
@@ -93,7 +93,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-11T02:47:48.151Z",
+  "updatedAt": "2019-01-11T16:53:42.634Z",
   "devdoc": {
     "methods": {}
   },
