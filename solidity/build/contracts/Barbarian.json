@@ -1,24 +1,40 @@
 {
   "contractName": "Barbarian",
-  "abi": [],
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820a89ef23340478a961646bf164d440228b78439da30a2757a531b25ec864889580029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820a89ef23340478a961646bf164d440228b78439da30a2757a531b25ec864889580029",
-  "sourceMap": "53:37:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:37:2;;;;;;;",
-  "deployedSourceMap": "53:37:2:-;;;;;",
-  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Class.sol\";\r\n\r\ncontract Barbarian is Class{\r\n    \r\n}",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getName",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function",
+      "signature": "0x17d7de7c"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061013f806100206000396000f3fe608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c14610046575b600080fd5b34801561005257600080fd5b5061005b6100d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009b578082015181840152602081019050610080565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040805190810160405280600981526020017f42617262617269616e000000000000000000000000000000000000000000000081525090509056fea165627a7a723058203879a70b0e584600537c0ef78f4194eee308689bd4239042e0eb9897b3bc0f720029",
+  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c14610046575b600080fd5b34801561005257600080fd5b5061005b6100d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009b578082015181840152602081019050610080565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040805190810160405280600981526020017f42617262617269616e000000000000000000000000000000000000000000000081525090509056fea165627a7a723058203879a70b0e584600537c0ef78f4194eee308689bd4239042e0eb9897b3bc0f720029",
+  "sourceMap": "53:128:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:128:2;;;;;;;",
+  "deployedSourceMap": "53:128:2:-;;;;;;;;;;;;;;;;;;;;;;;;87:91;;8:9:-1;5:2;;;30:1;27;20:12;5:2;87:91:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;87:91:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;127:13;152:18;;;;;;;;;;;;;;;;;;;;87:91;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Class.sol\";\r\n\r\ncontract Barbarian is Class{\r\n    function getName() public pure returns (string memory){\r\n        return \"Barbarian\";\r\n    }\r\n}",
   "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Classes/Barbarian.sol",
   "ast": {
     "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Classes/Barbarian.sol",
     "exportedSymbols": {
       "Barbarian": [
-        11
+        61
       ]
     },
-    "id": 12,
+    "id": 62,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7,
+        "id": 49,
         "literals": [
           "solidity",
           "^",
@@ -31,10 +47,10 @@
       {
         "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Class.sol",
         "file": "../Class.sol",
-        "id": 8,
+        "id": 50,
         "nodeType": "ImportDirective",
-        "scope": 12,
-        "sourceUnit": 6,
+        "scope": 62,
+        "sourceUnit": 48,
         "src": "27:22:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -45,53 +61,138 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 9,
+              "id": 51,
               "name": "Class",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5,
+              "referencedDeclaration": 47,
               "src": "75:5:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Class_$5",
+                "typeIdentifier": "t_contract$_Class_$47",
                 "typeString": "contract Class"
               }
             },
-            "id": 10,
+            "id": 52,
             "nodeType": "InheritanceSpecifier",
             "src": "75:5:2"
           }
         ],
         "contractDependencies": [
-          5
+          47
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 11,
+        "id": 61,
         "linearizedBaseContracts": [
-          11,
-          5
+          61,
+          47
         ],
         "name": "Barbarian",
         "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 12,
-        "src": "53:37:2"
+        "nodes": [
+          {
+            "body": {
+              "id": 59,
+              "nodeType": "Block",
+              "src": "141:37:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "42617262617269616e",
+                    "id": 57,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "159:11:2",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_0ab285ead4e5a423913f229f3fbfc34aca3a126475494d2f02f8022e6147b70a",
+                      "typeString": "literal_string \"Barbarian\""
+                    },
+                    "value": "Barbarian"
+                  },
+                  "functionReturnParameters": 56,
+                  "id": 58,
+                  "nodeType": "Return",
+                  "src": "152:18:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 60,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getName",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 53,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "103:2:2"
+            },
+            "returnParameters": {
+              "id": 56,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60,
+                  "src": "127:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 54,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "127:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "126:15:2"
+            },
+            "scope": 61,
+            "src": "87:91:2",
+            "stateMutability": "pure",
+            "superFunction": 46,
+            "visibility": "public"
+          }
+        ],
+        "scope": 62,
+        "src": "53:128:2"
       }
     ],
-    "src": "0:90:2"
+    "src": "0:181:2"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Classes/Barbarian.sol",
     "exportedSymbols": {
       "Barbarian": [
-        11
+        61
       ]
     },
-    "id": 12,
+    "id": 62,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7,
+        "id": 49,
         "literals": [
           "solidity",
           "^",
@@ -104,10 +205,10 @@
       {
         "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Class.sol",
         "file": "../Class.sol",
-        "id": 8,
+        "id": 50,
         "nodeType": "ImportDirective",
-        "scope": 12,
-        "sourceUnit": 6,
+        "scope": 62,
+        "sourceUnit": 48,
         "src": "27:22:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -118,48 +219,140 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 9,
+              "id": 51,
               "name": "Class",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5,
+              "referencedDeclaration": 47,
               "src": "75:5:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Class_$5",
+                "typeIdentifier": "t_contract$_Class_$47",
                 "typeString": "contract Class"
               }
             },
-            "id": 10,
+            "id": 52,
             "nodeType": "InheritanceSpecifier",
             "src": "75:5:2"
           }
         ],
         "contractDependencies": [
-          5
+          47
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 11,
+        "id": 61,
         "linearizedBaseContracts": [
-          11,
-          5
+          61,
+          47
         ],
         "name": "Barbarian",
         "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 12,
-        "src": "53:37:2"
+        "nodes": [
+          {
+            "body": {
+              "id": 59,
+              "nodeType": "Block",
+              "src": "141:37:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "42617262617269616e",
+                    "id": 57,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "159:11:2",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_0ab285ead4e5a423913f229f3fbfc34aca3a126475494d2f02f8022e6147b70a",
+                      "typeString": "literal_string \"Barbarian\""
+                    },
+                    "value": "Barbarian"
+                  },
+                  "functionReturnParameters": 56,
+                  "id": 58,
+                  "nodeType": "Return",
+                  "src": "152:18:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 60,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getName",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 53,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "103:2:2"
+            },
+            "returnParameters": {
+              "id": 56,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60,
+                  "src": "127:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 54,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "127:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "126:15:2"
+            },
+            "scope": 61,
+            "src": "87:91:2",
+            "stateMutability": "pure",
+            "superFunction": 46,
+            "visibility": "public"
+          }
+        ],
+        "scope": 62,
+        "src": "53:128:2"
       }
     ],
-    "src": "0:90:2"
+    "src": "0:181:2"
   },
   "compiler": {
     "name": "solc",
     "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "4447": {
+      "events": {},
+      "links": {},
+      "address": "0xDBD7065682518D92A68F5aFAC45d676b2fc20523",
+      "transactionHash": "0x935f395a4bd86453b876a91a9830a046bfdd335969070a3b4643db85f0f07b28"
+    }
+  },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-11T02:45:25.303Z",
+  "updatedAt": "2019-01-11T22:14:28.409Z",
   "devdoc": {
     "methods": {}
   },

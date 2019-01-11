@@ -1,9 +1,24 @@
 pragma solidity ^0.5.0;
 
 import "./Character.sol";
+import "./Class.sol";
 
 contract Game{
+
+    address private _owner;
     mapping(address => Character) private _characters;
+    mapping(string => Class) private _classes;
+
+    //require() means if condition not true, throw exception
+    //modifier is a condition check for a function
+    modifier isOwner{
+        require(_owner==msg.sender, "Sender is not ownder");
+        _; //this returns the flow of execution to the original function that is annotated (condition-orientated programming)
+    }
+
+    constructor() public{
+        _owner = msg.sender;
+    }
 
     /* notes to self:
     msg.sender is the owner of the contract
@@ -24,12 +39,20 @@ contract Game{
     It is almost free to use, but can only hold a limited amount of values.
     */
 
-    function createCharacter(string memory name) public {
-        _characters[msg.sender] = new Character(name);
+    function createCharacter(string memory name, string memory class) public {
+        _characters[msg.sender] = new Character(name, _classes[class]);
     }
-
 
     function getCharacter() public view returns (Character){
         return _characters[msg.sender];
+    }
+
+    //"string memory key" to store def of class as key value pair to ensure picking a valid class
+    function addClass(string memory key, Class class) public isOwner{
+        _classes[key] = class;
+    }
+
+    function removeClass(string memory key) public isOwner{
+        delete _classes[key];
     }
 }

@@ -1,24 +1,39 @@
 {
   "contractName": "Class",
-  "abi": [],
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a7230582065e771c0d674b478d44c885531c86386a26831be59f5358fa28ff1558063a4c40029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a7230582065e771c0d674b478d44c885531c86386a26831be59f5358fa28ff1558063a4c40029",
-  "sourceMap": "27:25:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:25:1;;;;;;;",
-  "deployedSourceMap": "27:25:1:-;;;;;",
-  "source": "pragma solidity ^0.5.0;\r\n\r\ninterface Class{\r\n    \r\n}",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getName",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Class{\r\n    //pure means promised not to modify or read the state (storage state)\r\n    function getName() public pure returns (string memory);\r\n}",
   "sourcePath": "C:\\Users\\Yichun\\Documents\\Projects\\Programming\\ethereum-game\\solidity\\contracts\\Class.sol",
   "ast": {
     "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Class.sol",
     "exportedSymbols": {
       "Class": [
-        25
+        47
       ]
     },
-    "id": 26,
+    "id": 48,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 24,
+        "id": 41,
         "literals": [
           "solidity",
           "^",
@@ -31,34 +46,89 @@
       {
         "baseContracts": [],
         "contractDependencies": [],
-        "contractKind": "interface",
+        "contractKind": "contract",
         "documentation": null,
-        "fullyImplemented": true,
-        "id": 25,
+        "fullyImplemented": false,
+        "id": 47,
         "linearizedBaseContracts": [
-          25
+          47
         ],
         "name": "Class",
         "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 26,
-        "src": "27:25:1"
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 46,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getName",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 42,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "139:2:1"
+            },
+            "returnParameters": {
+              "id": 45,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46,
+                  "src": "163:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 43,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "163:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "162:15:1"
+            },
+            "scope": 47,
+            "src": "123:55:1",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 48,
+        "src": "27:154:1"
       }
     ],
-    "src": "0:52:1"
+    "src": "0:181:1"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Class.sol",
     "exportedSymbols": {
       "Class": [
-        25
+        47
       ]
     },
-    "id": 26,
+    "id": 48,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 24,
+        "id": 41,
         "literals": [
           "solidity",
           "^",
@@ -71,21 +141,76 @@
       {
         "baseContracts": [],
         "contractDependencies": [],
-        "contractKind": "interface",
+        "contractKind": "contract",
         "documentation": null,
-        "fullyImplemented": true,
-        "id": 25,
+        "fullyImplemented": false,
+        "id": 47,
         "linearizedBaseContracts": [
-          25
+          47
         ],
         "name": "Class",
         "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 26,
-        "src": "27:25:1"
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 46,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getName",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 42,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "139:2:1"
+            },
+            "returnParameters": {
+              "id": 45,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46,
+                  "src": "163:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 43,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "163:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "162:15:1"
+            },
+            "scope": 47,
+            "src": "123:55:1",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 48,
+        "src": "27:154:1"
       }
     ],
-    "src": "0:52:1"
+    "src": "0:181:1"
   },
   "compiler": {
     "name": "solc",
@@ -93,7 +218,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-11T16:53:42.634Z",
+  "updatedAt": "2019-01-11T22:14:54.001Z",
   "devdoc": {
     "methods": {}
   },

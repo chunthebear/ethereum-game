@@ -1,8 +1,8 @@
 {
   "contractName": "Cleave",
   "abi": [],
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820e4b11a50b7245e83b31899b44df1099520b900db8082920f21b72a161134cafd0029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820e4b11a50b7245e83b31899b44df1099520b900db8082920f21b72a161134cafd0029",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a7230582062a392ffff85c3dd170f9c2ea12dcc0f67f809e75e654bb0411dfe9f569366230029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a7230582062a392ffff85c3dd170f9c2ea12dcc0f67f809e75e654bb0411dfe9f569366230029",
   "sourceMap": "53:34:9:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:34:9;;;;;;;",
   "deployedSourceMap": "53:34:9:-;;;;;",
   "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Spell.sol\";\r\n\r\ncontract Cleave is Spell{\r\n    \r\n}",
@@ -11,14 +11,14 @@
     "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spells/Cleave.sol",
     "exportedSymbols": {
       "Cleave": [
-        98
+        258
       ]
     },
-    "id": 99,
+    "id": 259,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 94,
+        "id": 254,
         "literals": [
           "solidity",
           "^",
@@ -31,10 +31,10 @@
       {
         "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spell.sol",
         "file": "../Spell.sol",
-        "id": 95,
+        "id": 255,
         "nodeType": "ImportDirective",
-        "scope": 99,
-        "sourceUnit": 87,
+        "scope": 259,
+        "sourceUnit": 247,
         "src": "27:22:9",
         "symbolAliases": [],
         "unitAlias": ""
@@ -45,36 +45,36 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 96,
+              "id": 256,
               "name": "Spell",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 86,
+              "referencedDeclaration": 246,
               "src": "72:5:9",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Spell_$86",
+                "typeIdentifier": "t_contract$_Spell_$246",
                 "typeString": "contract Spell"
               }
             },
-            "id": 97,
+            "id": 257,
             "nodeType": "InheritanceSpecifier",
             "src": "72:5:9"
           }
         ],
         "contractDependencies": [
-          86
+          246
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 98,
+        "id": 258,
         "linearizedBaseContracts": [
-          98,
-          86
+          258,
+          246
         ],
         "name": "Cleave",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 99,
+        "scope": 259,
         "src": "53:34:9"
       }
     ],
@@ -84,14 +84,14 @@
     "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spells/Cleave.sol",
     "exportedSymbols": {
       "Cleave": [
-        98
+        258
       ]
     },
-    "id": 99,
+    "id": 259,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 94,
+        "id": 254,
         "literals": [
           "solidity",
           "^",
@@ -104,10 +104,10 @@
       {
         "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spell.sol",
         "file": "../Spell.sol",
-        "id": 95,
+        "id": 255,
         "nodeType": "ImportDirective",
-        "scope": 99,
-        "sourceUnit": 87,
+        "scope": 259,
+        "sourceUnit": 247,
         "src": "27:22:9",
         "symbolAliases": [],
         "unitAlias": ""
@@ -118,36 +118,36 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 96,
+              "id": 256,
               "name": "Spell",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 86,
+              "referencedDeclaration": 246,
               "src": "72:5:9",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Spell_$86",
+                "typeIdentifier": "t_contract$_Spell_$246",
                 "typeString": "contract Spell"
               }
             },
-            "id": 97,
+            "id": 257,
             "nodeType": "InheritanceSpecifier",
             "src": "72:5:9"
           }
         ],
         "contractDependencies": [
-          86
+          246
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 98,
+        "id": 258,
         "linearizedBaseContracts": [
-          98,
-          86
+          258,
+          246
         ],
         "name": "Cleave",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 99,
+        "scope": 259,
         "src": "53:34:9"
       }
     ],
@@ -159,7 +159,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-11T02:45:25.304Z",
+  "updatedAt": "2019-01-11T22:14:25.065Z",
   "devdoc": {
     "methods": {}
   },
