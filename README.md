@@ -1,1 +1,1 @@
-# game-on-ethereum
+# ethereum-game
