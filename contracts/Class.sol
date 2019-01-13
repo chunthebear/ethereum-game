@@ -1,11 +1,15 @@
 pragma solidity ^0.5.0;
 
+import "./Skill.sol";
+
 contract Class{
     string private _name;
     uint private _hitPoints;
     uint private _agility;
     uint private _intelligence;
     uint private _strength;
+
+    Skill[] internal _skills;
 
     constructor(string memory name, uint hitPoints, uint agility, uint intelligence, uint strength) public{
         _name = name;

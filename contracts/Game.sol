@@ -61,4 +61,8 @@ contract Game{
     function removeClass(string memory key) public isOwner{
         delete _classes[key];
     }
+
+    function attack (Character character) public return (uint){
+        _combatEngine.attack(_characters[msg.sender], character);
+    }
 }
