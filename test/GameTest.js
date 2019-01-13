@@ -40,6 +40,7 @@ contract("Game", (accounts) => {
             assert.equal(name, PROVIDED_CLASS, "Failed to create a character with the provided class");
         });
     });
+    
     it("should not allow me to set attributes of a character", () => {
         let _character;
         let _class;
