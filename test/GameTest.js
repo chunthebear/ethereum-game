@@ -40,4 +40,30 @@ contract("Game", (accounts) => {
             assert.equal(name, PROVIDED_CLASS, "Failed to create a character with the provided class");
         });
     });
+    it("should not allow me to set attributes of a character", () => {
+        let _character;
+        let _class;
+
+        return Game.deployed()
+            .then(instance => {
+                _game = instance;
+                return _game.createCharacter(PROVIDED_NAME, PROVIDED_CLASS, { from: characterAccount });
+            })
+            .then(() => {
+                return _game.getCharacter({ from: characterAccount });
+            })
+            .then(instance => {
+                _character = Character.at(instance);
+                return _character.setStrength(200, { from: characterAccount });
+            })
+            .catch(error => {
+                assert.equal(
+                    error.message,
+                    "VM Exception while processing transaction: revert Request did not come from the game",
+                    "Exception not thrown when setting attributes of character with invalid address"
+                );
+            });
+    });
 });
+
+
