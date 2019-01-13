@@ -5,7 +5,8 @@ let Barbarian = artifacts.require("./Classes/Barbarian.sol");
 
 module.exports = function(deployer) {
   let _game;
-  deployer.deploy(Game).then((instance) =>{
+  deployer.deploy(Game)
+  .then((instance) =>{
     _game = instance;
     return deployer.deploy(Rogue);
   }).then(() =>{

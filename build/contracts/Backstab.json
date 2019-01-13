@@ -1,14 +1,14 @@
 {
   "contractName": "Backstab",
   "abi": [],
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a7230582059fae376cf659873cb50255c5b478163629e535587d7446b5f2d59eb856e46690029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a7230582059fae376cf659873cb50255c5b478163629e535587d7446b5f2d59eb856e46690029",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058208481359c3e357a1e1661f4262e82413cc19c071a20e3ca39ed6aa281cf2076d30029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058208481359c3e357a1e1661f4262e82413cc19c071a20e3ca39ed6aa281cf2076d30029",
   "sourceMap": "53:36:8:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:36:8;;;;;;;",
   "deployedSourceMap": "53:36:8:-;;;;;",
   "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Spell.sol\";\r\n\r\ncontract Backstab is Spell{\r\n    \r\n}",
-  "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spells/Backstab.sol",
+  "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spells/Backstab.sol",
   "ast": {
-    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spells/Backstab.sol",
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spells/Backstab.sol",
     "exportedSymbols": {
       "Backstab": [
         252
@@ -29,7 +29,7 @@
         "src": "0:23:8"
       },
       {
-        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spell.sol",
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spell.sol",
         "file": "../Spell.sol",
         "id": 249,
         "nodeType": "ImportDirective",
@@ -81,7 +81,7 @@
     "src": "0:89:8"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spells/Backstab.sol",
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spells/Backstab.sol",
     "exportedSymbols": {
       "Backstab": [
         252
@@ -102,7 +102,7 @@
         "src": "0:23:8"
       },
       {
-        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spell.sol",
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spell.sol",
         "file": "../Spell.sol",
         "id": 249,
         "nodeType": "ImportDirective",
@@ -159,7 +159,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-11T22:14:25.063Z",
+  "updatedAt": "2019-01-11T22:28:17.022Z",
   "devdoc": {
     "methods": {}
   },

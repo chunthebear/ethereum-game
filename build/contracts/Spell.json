@@ -1,24 +1,24 @@
 {
   "contractName": "Spell",
   "abi": [],
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058200d2ddb2126737743b59a346b743e30a568c33f29fc4a89641edeb157d63cfab50029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058200d2ddb2126737743b59a346b743e30a568c33f29fc4a89641edeb157d63cfab50029",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820d7877a42dda287137bad5d3a4b174209bfca075711ec70ad5fe51144f8ba632e0029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820d7877a42dda287137bad5d3a4b174209bfca075711ec70ad5fe51144f8ba632e0029",
   "sourceMap": "27:24:7:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:24:7;;;;;;;",
   "deployedSourceMap": "27:24:7:-;;;;;",
   "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Spell{\r\n    \r\n}",
-  "sourcePath": "C:\\Users\\Yichun\\Documents\\Projects\\Programming\\ethereum-game\\solidity\\contracts\\Spell.sol",
+  "sourcePath": "C:\\Users\\Yichun\\Documents\\Projects\\Programming\\ethereum-game\\contracts\\Spell.sol",
   "ast": {
-    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spell.sol",
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spell.sol",
     "exportedSymbols": {
       "Spell": [
-        246
+        364
       ]
     },
-    "id": 247,
+    "id": 365,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 245,
+        "id": 363,
         "literals": [
           "solidity",
           "^",
@@ -34,31 +34,31 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 246,
+        "id": 364,
         "linearizedBaseContracts": [
-          246
+          364
         ],
         "name": "Spell",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 247,
+        "scope": 365,
         "src": "27:24:7"
       }
     ],
     "src": "0:51:7"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spell.sol",
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spell.sol",
     "exportedSymbols": {
       "Spell": [
-        246
+        364
       ]
     },
-    "id": 247,
+    "id": 365,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 245,
+        "id": 363,
         "literals": [
           "solidity",
           "^",
@@ -74,14 +74,14 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 246,
+        "id": 364,
         "linearizedBaseContracts": [
-          246
+          364
         ],
         "name": "Spell",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 247,
+        "scope": 365,
         "src": "27:24:7"
       }
     ],
@@ -93,7 +93,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-11T22:14:54.002Z",
+  "updatedAt": "2019-01-12T17:48:13.292Z",
   "devdoc": {
     "methods": {}
   },

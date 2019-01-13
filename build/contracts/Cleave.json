@@ -1,14 +1,14 @@
 {
   "contractName": "Cleave",
   "abi": [],
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a7230582062a392ffff85c3dd170f9c2ea12dcc0f67f809e75e654bb0411dfe9f569366230029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a7230582062a392ffff85c3dd170f9c2ea12dcc0f67f809e75e654bb0411dfe9f569366230029",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a7230582019c145282ef5f93758b0aa16440a99f65c6156fecb9d4667012aa5663b355d880029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a7230582019c145282ef5f93758b0aa16440a99f65c6156fecb9d4667012aa5663b355d880029",
   "sourceMap": "53:34:9:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:34:9;;;;;;;",
   "deployedSourceMap": "53:34:9:-;;;;;",
   "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Spell.sol\";\r\n\r\ncontract Cleave is Spell{\r\n    \r\n}",
-  "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spells/Cleave.sol",
+  "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spells/Cleave.sol",
   "ast": {
-    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spells/Cleave.sol",
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spells/Cleave.sol",
     "exportedSymbols": {
       "Cleave": [
         258
@@ -29,7 +29,7 @@
         "src": "0:23:9"
       },
       {
-        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spell.sol",
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spell.sol",
         "file": "../Spell.sol",
         "id": 255,
         "nodeType": "ImportDirective",
@@ -81,7 +81,7 @@
     "src": "0:87:9"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spells/Cleave.sol",
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spells/Cleave.sol",
     "exportedSymbols": {
       "Cleave": [
         258
@@ -102,7 +102,7 @@
         "src": "0:23:9"
       },
       {
-        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Spell.sol",
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spell.sol",
         "file": "../Spell.sol",
         "id": 255,
         "nodeType": "ImportDirective",
@@ -159,7 +159,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-11T22:14:25.065Z",
+  "updatedAt": "2019-01-11T22:28:17.022Z",
   "devdoc": {
     "methods": {}
   },

@@ -12,29 +12,84 @@
         }
       ],
       "payable": false,
-      "stateMutability": "pure",
-      "type": "function",
-      "signature": "0x17d7de7c"
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getIntelligence",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getAgility",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getHitPoints",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getStrength",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b5061013f806100206000396000f3fe608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c14610046575b600080fd5b34801561005257600080fd5b5061005b6100d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009b578082015181840152602081019050610080565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040805190810160405280600981526020017f42617262617269616e000000000000000000000000000000000000000000000081525090509056fea165627a7a723058203879a70b0e584600537c0ef78f4194eee308689bd4239042e0eb9897b3bc0f720029",
-  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c14610046575b600080fd5b34801561005257600080fd5b5061005b6100d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009b578082015181840152602081019050610080565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040805190810160405280600981526020017f42617262617269616e000000000000000000000000000000000000000000000081525090509056fea165627a7a723058203879a70b0e584600537c0ef78f4194eee308689bd4239042e0eb9897b3bc0f720029",
-  "sourceMap": "53:128:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:128:2;;;;;;;",
-  "deployedSourceMap": "53:128:2:-;;;;;;;;;;;;;;;;;;;;;;;;87:91;;8:9:-1;5:2;;;30:1;27;20:12;5:2;87:91:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;87:91:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;127:13;152:18;;;;;;;;;;;;;;;;;;;;87:91;:::o",
-  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Class.sol\";\r\n\r\ncontract Barbarian is Class{\r\n    function getName() public pure returns (string memory){\r\n        return \"Barbarian\";\r\n    }\r\n}",
-  "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Classes/Barbarian.sol",
+  "bytecode": "0x60806040526040805190810160405280600981526020017f42617262617269616e000000000000000000000000000000000000000000000081525060146002806010846000908051906020019061005792919061007e565b50836001819055508260028190555081600381905550806004819055505050505050610123565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100bf57805160ff19168380011785556100ed565b828001600101855582156100ed579182015b828111156100ec5782518255916020019190600101906100d1565b5b5090506100fa91906100fe565b5090565b61012091905b8082111561011c576000816000905550600101610104565b5090565b90565b6102a4806101326000396000f3fe60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c14610072578063bb94ea6714610102578063e0f8b6ad1461012d578063ee38684714610158578063f18ac37714610183575b600080fd5b34801561007e57600080fd5b506100876101ae565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100c75780820151818401526020810190506100ac565b50505050905090810190601f1680156100f45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561010e57600080fd5b50610117610250565b6040518082815260200191505060405180910390f35b34801561013957600080fd5b5061014261025a565b6040518082815260200191505060405180910390f35b34801561016457600080fd5b5061016d610264565b6040518082815260200191505060405180910390f35b34801561018f57600080fd5b5061019861026e565b6040518082815260200191505060405180910390f35b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102465780601f1061021b57610100808354040283529160200191610246565b820191906000526020600020905b81548152906001019060200180831161022957829003601f168201915b5050505050905090565b6000600354905090565b6000600254905090565b6000600154905090565b600060045490509056fea165627a7a723058200fe819763ba4f808c56be9ed87a2d3d86a718f89066c878ebe59e78bffe7df890029",
+  "deployedBytecode": "0x60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c14610072578063bb94ea6714610102578063e0f8b6ad1461012d578063ee38684714610158578063f18ac37714610183575b600080fd5b34801561007e57600080fd5b506100876101ae565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100c75780820151818401526020810190506100ac565b50505050905090810190601f1680156100f45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561010e57600080fd5b50610117610250565b6040518082815260200191505060405180910390f35b34801561013957600080fd5b5061014261025a565b6040518082815260200191505060405180910390f35b34801561016457600080fd5b5061016d610264565b6040518082815260200191505060405180910390f35b34801561018f57600080fd5b5061019861026e565b6040518082815260200191505060405180910390f35b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102465780601f1061021b57610100808354040283529160200191610246565b820191906000526020600020905b81548152906001019060200180831161022957829003601f168201915b5050505050905090565b6000600354905090565b6000600254905090565b6000600154905090565b600060045490509056fea165627a7a723058200fe819763ba4f808c56be9ed87a2d3d86a718f89066c878ebe59e78bffe7df890029",
+  "sourceMap": "53:64:2:-;;;197:265:1;;;;;;;;;;;;;;;;;;94:2:2;98:1;101;104:2;318:4:1;310:5;:12;;;;;;;;;;;;:::i;:::-;;346:9;333:10;:22;;;;377:7;366:8;:18;;;;411:12;395:13;:28;;;;446:8;434:9;:20;;;;197:265;;;;;53:64:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "53:64:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;470:85:1;;8:9:-1;5:2;;;30:1;27;20:12;5:2;470:85:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;470:85:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;747:92;;8:9:-1;5:2;;;30:1;27;20:12;5:2;747:92:1;;;;;;;;;;;;;;;;;;;;;;;657:82;;8:9:-1;5:2;;;30:1;27;20:12;5:2;657:82:1;;;;;;;;;;;;;;;;;;;;;;;563:86;;8:9:-1;5:2;;;30:1;27;20:12;5:2;563:86:1;;;;;;;;;;;;;;;;;;;;;;;847:84;;8:9:-1;5:2;;;30:1;27;20:12;5:2;847:84:1;;;;;;;;;;;;;;;;;;;;;;;470:85;510:13;542:5;535:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;470:85;:::o;747:92::-;795:4;818:13;;811:20;;747:92;:::o;657:82::-;700:4;723:8;;716:15;;657:82;:::o;563:86::-;608:4;631:10;;624:17;;563:86;:::o;847:84::-;891:4;914:9;;907:16;;847:84;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Class.sol\";\r\n\r\ncontract Barbarian is Class(\"Barbarian\", 20, 2, 2, 16){\r\n    \r\n}",
+  "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Classes/Barbarian.sol",
   "ast": {
-    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Classes/Barbarian.sol",
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Classes/Barbarian.sol",
     "exportedSymbols": {
       "Barbarian": [
-        61
+        185
       ]
     },
-    "id": 62,
+    "id": 186,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 49,
+        "id": 176,
         "literals": [
           "solidity",
           "^",
@@ -45,12 +100,12 @@
         "src": "0:23:2"
       },
       {
-        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Class.sol",
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Class.sol",
         "file": "../Class.sol",
-        "id": 50,
+        "id": 177,
         "nodeType": "ImportDirective",
-        "scope": 62,
-        "sourceUnit": 48,
+        "scope": 186,
+        "sourceUnit": 175,
         "src": "27:22:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -58,141 +113,147 @@
       {
         "baseContracts": [
           {
-            "arguments": null,
+            "arguments": [
+              {
+                "argumentTypes": null,
+                "hexValue": "42617262617269616e",
+                "id": 179,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "81:11:2",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_stringliteral_0ab285ead4e5a423913f229f3fbfc34aca3a126475494d2f02f8022e6147b70a",
+                  "typeString": "literal_string \"Barbarian\""
+                },
+                "value": "Barbarian"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "3230",
+                "id": 180,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "94:2:2",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_20_by_1",
+                  "typeString": "int_const 20"
+                },
+                "value": "20"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "32",
+                "id": 181,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "98:1:2",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_2_by_1",
+                  "typeString": "int_const 2"
+                },
+                "value": "2"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "32",
+                "id": 182,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "101:1:2",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_2_by_1",
+                  "typeString": "int_const 2"
+                },
+                "value": "2"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "3136",
+                "id": 183,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "104:2:2",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_16_by_1",
+                  "typeString": "int_const 16"
+                },
+                "value": "16"
+              }
+            ],
             "baseName": {
               "contractScope": null,
-              "id": 51,
+              "id": 178,
               "name": "Class",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 47,
+              "referencedDeclaration": 174,
               "src": "75:5:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Class_$47",
+                "typeIdentifier": "t_contract$_Class_$174",
                 "typeString": "contract Class"
               }
             },
-            "id": 52,
+            "id": 184,
             "nodeType": "InheritanceSpecifier",
-            "src": "75:5:2"
+            "src": "75:32:2"
           }
         ],
         "contractDependencies": [
-          47
+          174
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 61,
+        "id": 185,
         "linearizedBaseContracts": [
-          61,
-          47
+          185,
+          174
         ],
         "name": "Barbarian",
         "nodeType": "ContractDefinition",
-        "nodes": [
-          {
-            "body": {
-              "id": 59,
-              "nodeType": "Block",
-              "src": "141:37:2",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "hexValue": "42617262617269616e",
-                    "id": 57,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": true,
-                    "kind": "string",
-                    "lValueRequested": false,
-                    "nodeType": "Literal",
-                    "src": "159:11:2",
-                    "subdenomination": null,
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_stringliteral_0ab285ead4e5a423913f229f3fbfc34aca3a126475494d2f02f8022e6147b70a",
-                      "typeString": "literal_string \"Barbarian\""
-                    },
-                    "value": "Barbarian"
-                  },
-                  "functionReturnParameters": 56,
-                  "id": 58,
-                  "nodeType": "Return",
-                  "src": "152:18:2"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 60,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getName",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 53,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "103:2:2"
-            },
-            "returnParameters": {
-              "id": 56,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 55,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 60,
-                  "src": "127:13:2",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 54,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "127:6:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "126:15:2"
-            },
-            "scope": 61,
-            "src": "87:91:2",
-            "stateMutability": "pure",
-            "superFunction": 46,
-            "visibility": "public"
-          }
-        ],
-        "scope": 62,
-        "src": "53:128:2"
+        "nodes": [],
+        "scope": 186,
+        "src": "53:64:2"
       }
     ],
-    "src": "0:181:2"
+    "src": "0:117:2"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Classes/Barbarian.sol",
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Classes/Barbarian.sol",
     "exportedSymbols": {
       "Barbarian": [
-        61
+        185
       ]
     },
-    "id": 62,
+    "id": 186,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 49,
+        "id": 176,
         "literals": [
           "solidity",
           "^",
@@ -203,12 +264,12 @@
         "src": "0:23:2"
       },
       {
-        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/solidity/contracts/Class.sol",
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Class.sol",
         "file": "../Class.sol",
-        "id": 50,
+        "id": 177,
         "nodeType": "ImportDirective",
-        "scope": 62,
-        "sourceUnit": 48,
+        "scope": 186,
+        "sourceUnit": 175,
         "src": "27:22:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -216,128 +277,134 @@
       {
         "baseContracts": [
           {
-            "arguments": null,
+            "arguments": [
+              {
+                "argumentTypes": null,
+                "hexValue": "42617262617269616e",
+                "id": 179,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "81:11:2",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_stringliteral_0ab285ead4e5a423913f229f3fbfc34aca3a126475494d2f02f8022e6147b70a",
+                  "typeString": "literal_string \"Barbarian\""
+                },
+                "value": "Barbarian"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "3230",
+                "id": 180,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "94:2:2",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_20_by_1",
+                  "typeString": "int_const 20"
+                },
+                "value": "20"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "32",
+                "id": 181,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "98:1:2",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_2_by_1",
+                  "typeString": "int_const 2"
+                },
+                "value": "2"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "32",
+                "id": 182,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "101:1:2",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_2_by_1",
+                  "typeString": "int_const 2"
+                },
+                "value": "2"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "3136",
+                "id": 183,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "104:2:2",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_16_by_1",
+                  "typeString": "int_const 16"
+                },
+                "value": "16"
+              }
+            ],
             "baseName": {
               "contractScope": null,
-              "id": 51,
+              "id": 178,
               "name": "Class",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 47,
+              "referencedDeclaration": 174,
               "src": "75:5:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Class_$47",
+                "typeIdentifier": "t_contract$_Class_$174",
                 "typeString": "contract Class"
               }
             },
-            "id": 52,
+            "id": 184,
             "nodeType": "InheritanceSpecifier",
-            "src": "75:5:2"
+            "src": "75:32:2"
           }
         ],
         "contractDependencies": [
-          47
+          174
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 61,
+        "id": 185,
         "linearizedBaseContracts": [
-          61,
-          47
+          185,
+          174
         ],
         "name": "Barbarian",
         "nodeType": "ContractDefinition",
-        "nodes": [
-          {
-            "body": {
-              "id": 59,
-              "nodeType": "Block",
-              "src": "141:37:2",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "hexValue": "42617262617269616e",
-                    "id": 57,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": true,
-                    "kind": "string",
-                    "lValueRequested": false,
-                    "nodeType": "Literal",
-                    "src": "159:11:2",
-                    "subdenomination": null,
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_stringliteral_0ab285ead4e5a423913f229f3fbfc34aca3a126475494d2f02f8022e6147b70a",
-                      "typeString": "literal_string \"Barbarian\""
-                    },
-                    "value": "Barbarian"
-                  },
-                  "functionReturnParameters": 56,
-                  "id": 58,
-                  "nodeType": "Return",
-                  "src": "152:18:2"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 60,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getName",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 53,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "103:2:2"
-            },
-            "returnParameters": {
-              "id": 56,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 55,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 60,
-                  "src": "127:13:2",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 54,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "127:6:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "126:15:2"
-            },
-            "scope": 61,
-            "src": "87:91:2",
-            "stateMutability": "pure",
-            "superFunction": 46,
-            "visibility": "public"
-          }
-        ],
-        "scope": 62,
-        "src": "53:128:2"
+        "nodes": [],
+        "scope": 186,
+        "src": "53:64:2"
       }
     ],
-    "src": "0:181:2"
+    "src": "0:117:2"
   },
   "compiler": {
     "name": "solc",
@@ -352,7 +419,7 @@
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-11T22:14:28.409Z",
+  "updatedAt": "2019-01-12T17:48:01.124Z",
   "devdoc": {
     "methods": {}
   },
