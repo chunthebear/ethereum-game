@@ -1,13 +1,17 @@
 pragma solidity ^0.5.0;
 
 import "./Character.sol";
+import "./Skill.sol";
 import "./Class.sol";
+import "./CombatEngine.sol";
 
 contract Game{
 
     address private _owner;
     mapping(address => Character) private _characters;
     mapping(string => Class) private _classes;
+
+    CombatEngine private _combatEngine;
 
     //require() means if condition not true, throw exception
     //modifier is a condition check for a function
@@ -62,7 +66,7 @@ contract Game{
         delete _classes[key];
     }
 
-    function attack (Character character) public return (uint){
-        _combatEngine.attack(_characters[msg.sender], character);
+    function attack (Character character, Skill skill) public view returns (uint){
+        _combatEngine.attack(_characters[msg.sender], character, skill);
     }
 }

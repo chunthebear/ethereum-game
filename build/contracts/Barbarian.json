@@ -18,6 +18,20 @@
     {
       "constant": true,
       "inputs": [],
+      "name": "getClass",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
       "name": "getIntelligence",
       "outputs": [
         {
@@ -70,26 +84,32 @@
       "payable": false,
       "stateMutability": "view",
       "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
     }
   ],
-  "bytecode": "0x60806040526040805190810160405280600981526020017f42617262617269616e000000000000000000000000000000000000000000000081525060146002806010846000908051906020019061005792919061007e565b50836001819055508260028190555081600381905550806004819055505050505050610123565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100bf57805160ff19168380011785556100ed565b828001600101855582156100ed579182015b828111156100ec5782518255916020019190600101906100d1565b5b5090506100fa91906100fe565b5090565b61012091905b8082111561011c576000816000905550600101610104565b5090565b90565b6102a4806101326000396000f3fe60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c14610072578063bb94ea6714610102578063e0f8b6ad1461012d578063ee38684714610158578063f18ac37714610183575b600080fd5b34801561007e57600080fd5b506100876101ae565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100c75780820151818401526020810190506100ac565b50505050905090810190601f1680156100f45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561010e57600080fd5b50610117610250565b6040518082815260200191505060405180910390f35b34801561013957600080fd5b5061014261025a565b6040518082815260200191505060405180910390f35b34801561016457600080fd5b5061016d610264565b6040518082815260200191505060405180910390f35b34801561018f57600080fd5b5061019861026e565b6040518082815260200191505060405180910390f35b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102465780601f1061021b57610100808354040283529160200191610246565b820191906000526020600020905b81548152906001019060200180831161022957829003601f168201915b5050505050905090565b6000600354905090565b6000600254905090565b6000600154905090565b600060045490509056fea165627a7a723058200fe819763ba4f808c56be9ed87a2d3d86a718f89066c878ebe59e78bffe7df890029",
-  "deployedBytecode": "0x60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c14610072578063bb94ea6714610102578063e0f8b6ad1461012d578063ee38684714610158578063f18ac37714610183575b600080fd5b34801561007e57600080fd5b506100876101ae565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100c75780820151818401526020810190506100ac565b50505050905090810190601f1680156100f45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561010e57600080fd5b50610117610250565b6040518082815260200191505060405180910390f35b34801561013957600080fd5b5061014261025a565b6040518082815260200191505060405180910390f35b34801561016457600080fd5b5061016d610264565b6040518082815260200191505060405180910390f35b34801561018f57600080fd5b5061019861026e565b6040518082815260200191505060405180910390f35b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102465780601f1061021b57610100808354040283529160200191610246565b820191906000526020600020905b81548152906001019060200180831161022957829003601f168201915b5050505050905090565b6000600354905090565b6000600254905090565b6000600154905090565b600060045490509056fea165627a7a723058200fe819763ba4f808c56be9ed87a2d3d86a718f89066c878ebe59e78bffe7df890029",
-  "sourceMap": "53:64:2:-;;;197:265:1;;;;;;;;;;;;;;;;;;94:2:2;98:1;101;104:2;318:4:1;310:5;:12;;;;;;;;;;;;:::i;:::-;;346:9;333:10;:22;;;;377:7;366:8;:18;;;;411:12;395:13;:28;;;;446:8;434:9;:20;;;;197:265;;;;;53:64:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "53:64:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;470:85:1;;8:9:-1;5:2;;;30:1;27;20:12;5:2;470:85:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;470:85:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;747:92;;8:9:-1;5:2;;;30:1;27;20:12;5:2;747:92:1;;;;;;;;;;;;;;;;;;;;;;;657:82;;8:9:-1;5:2;;;30:1;27;20:12;5:2;657:82:1;;;;;;;;;;;;;;;;;;;;;;;563:86;;8:9:-1;5:2;;;30:1;27;20:12;5:2;563:86:1;;;;;;;;;;;;;;;;;;;;;;;847:84;;8:9:-1;5:2;;;30:1;27;20:12;5:2;847:84:1;;;;;;;;;;;;;;;;;;;;;;;470:85;510:13;542:5;535:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;470:85;:::o;747:92::-;795:4;818:13;;811:20;;747:92;:::o;657:82::-;700:4;723:8;;716:15;;657:82;:::o;563:86::-;608:4;631:10;;624:17;;563:86;:::o;847:84::-;891:4;914:9;;907:16;;847:84;:::o",
-  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Class.sol\";\r\n\r\ncontract Barbarian is Class(\"Barbarian\", 20, 2, 2, 16){\r\n    \r\n}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040805190810160405280600981526020017f42617262617269616e0000000000000000000000000000000000000000000000815250601460028060106001856000908051906020019061006692919061011f565b508460018190555083600281905550826003819055508160048190555080600581905550505050505050600661009a61019f565b604051809103906000f0801580156100b6573d6000803e3d6000fd5b5090806001815401808255809150509060018203906000526020600020016000909192909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506101d4565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061016057805160ff191683800117855561018e565b8280016001018555821561018e579182015b8281111561018d578251825591602001919060010190610172565b5b50905061019b91906101af565b5090565b6040516103d7806104c783390190565b6101d191905b808211156101cd5760008160009055506001016101b5565b5090565b90565b6102e4806101e36000396000f3fe608060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c1461007d57806357e61ea41461010d578063bb94ea6714610138578063e0f8b6ad14610163578063ee3868471461018e578063f18ac377146101b9575b600080fd5b34801561008957600080fd5b506100926101e4565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100d25780820151818401526020810190506100b7565b50505050905090810190601f1680156100ff5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561011957600080fd5b50610122610286565b6040518082815260200191505060405180910390f35b34801561014457600080fd5b5061014d610290565b6040518082815260200191505060405180910390f35b34801561016f57600080fd5b5061017861029a565b6040518082815260200191505060405180910390f35b34801561019a57600080fd5b506101a36102a4565b6040518082815260200191505060405180910390f35b3480156101c557600080fd5b506101ce6102ae565b6040518082815260200191505060405180910390f35b606060008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561027c5780601f106102515761010080835404028352916020019161027c565b820191906000526020600020905b81548152906001019060200180831161025f57829003601f168201915b5050505050905090565b6000600554905090565b6000600354905090565b6000600254905090565b6000600154905090565b600060045490509056fea165627a7a7230582039238645a1179d5732dc71c30f25728f46c65b629483cd709862e96df4ead4eb002960806040526040805190810160405280600681526020017f436c6561766500000000000000000000000000000000000000000000000000008152506001600660016002846000908051906020019061005892919061007f565b50826002819055508360018190555081600381905550806004819055505050505050610124565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100c057805160ff19168380011785556100ee565b828001600101855582156100ee579182015b828111156100ed5782518255916020019190600101906100d2565b5b5090506100fb91906100ff565b5090565b61012191905b8082111561011d576000816000905550600101610105565b5090565b90565b6102a4806101336000396000f3fe60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c1461007257806357e61ea4146101025780635bd81ab51461012d578063a89e834314610158578063b7c4c13d14610183575b600080fd5b34801561007e57600080fd5b506100876101ae565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100c75780820151818401526020810190506100ac565b50505050905090810190601f1680156100f45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561010e57600080fd5b50610117610250565b6040518082815260200191505060405180910390f35b34801561013957600080fd5b5061014261025a565b6040518082815260200191505060405180910390f35b34801561016457600080fd5b5061016d610264565b6040518082815260200191505060405180910390f35b34801561018f57600080fd5b5061019861026e565b6040518082815260200191505060405180910390f35b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102465780601f1061021b57610100808354040283529160200191610246565b820191906000526020600020905b81548152906001019060200180831161022957829003601f168201915b5050505050905090565b6000600354905090565b6000600254905090565b6000600454905090565b600060015490509056fea165627a7a72305820bdd4449b7dd6b697c899467ff41baa0cbfcd871f7760ae71693957f7ef84066c0029",
+  "deployedBytecode": "0x608060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c1461007d57806357e61ea41461010d578063bb94ea6714610138578063e0f8b6ad14610163578063ee3868471461018e578063f18ac377146101b9575b600080fd5b34801561008957600080fd5b506100926101e4565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100d25780820151818401526020810190506100b7565b50505050905090810190601f1680156100ff5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561011957600080fd5b50610122610286565b6040518082815260200191505060405180910390f35b34801561014457600080fd5b5061014d610290565b6040518082815260200191505060405180910390f35b34801561016f57600080fd5b5061017861029a565b6040518082815260200191505060405180910390f35b34801561019a57600080fd5b506101a36102a4565b6040518082815260200191505060405180910390f35b3480156101c557600080fd5b506101ce6102ae565b6040518082815260200191505060405180910390f35b606060008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561027c5780601f106102515761010080835404028352916020019161027c565b820191906000526020600020905b81548152906001019060200180831161025f57829003601f168201915b5050505050905090565b6000600554905090565b6000600354905090565b6000600254905090565b6000600154905090565b600060045490509056fea165627a7a7230582039238645a1179d5732dc71c30f25728f46c65b629483cd709862e96df4ead4eb0029",
+  "sourceMap": "85:132:2:-;;;149:65;8:9:-1;5:2;;;30:1;27;20:12;5:2;149:65:2;283:302:1;;;;;;;;;;;;;;;;;;126:2:2;130:1;133;136:2;140:1;416:4:1;408:5;:12;;;;;;;;;;;;:::i;:::-;;444:9;431:10;:22;;;;475:7;464:8;:18;;;;509:12;493:13;:28;;;;544:8;532:9;:20;;;;572:5;563:6;:14;;;;283:302;;;;;;180:7:2;193:12;;:::i;:::-;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;193:12:2;180:26;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;180:26:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;85:132;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "85:132:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;593:85:1;;8:9:-1;5:2;;;30:1;27;20:12;5:2;593:85:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;593:85:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;686:77;;8:9:-1;5:2;;;30:1;27;20:12;5:2;686:77:1;;;;;;;;;;;;;;;;;;;;;;;955:92;;8:9:-1;5:2;;;30:1;27;20:12;5:2;955:92:1;;;;;;;;;;;;;;;;;;;;;;;865:82;;8:9:-1;5:2;;;30:1;27;20:12;5:2;865:82:1;;;;;;;;;;;;;;;;;;;;;;;771:86;;8:9:-1;5:2;;;30:1;27;20:12;5:2;771:86:1;;;;;;;;;;;;;;;;;;;;;;;1055:84;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1055:84:1;;;;;;;;;;;;;;;;;;;;;;;593:85;633:13;665:5;658:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;593:85;:::o;686:77::-;726:4;749:6;;742:13;;686:77;:::o;955:92::-;1003:4;1026:13;;1019:20;;955:92;:::o;865:82::-;908:4;931:8;;924:15;;865:82;:::o;771:86::-;816:4;839:10;;832:17;;771:86;:::o;1055:84::-;1099:4;1122:9;;1115:16;;1055:84;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Class.sol\";\r\nimport \"../Skills/Cleave.sol\";\r\n\r\ncontract Barbarian is Class(\"Barbarian\", 20, 2, 2, 16, 1){\r\n    constructor() public{\r\n        _skills.push(new Cleave());\r\n    }\r\n}",
   "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Classes/Barbarian.sol",
   "ast": {
     "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Classes/Barbarian.sol",
     "exportedSymbols": {
       "Barbarian": [
-        185
+        360
       ]
     },
-    "id": 186,
+    "id": 361,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 176,
+        "id": 337,
         "literals": [
           "solidity",
           "^",
@@ -102,11 +122,22 @@
       {
         "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Class.sol",
         "file": "../Class.sol",
-        "id": 177,
+        "id": 338,
         "nodeType": "ImportDirective",
-        "scope": 186,
-        "sourceUnit": 175,
+        "scope": 361,
+        "sourceUnit": 336,
         "src": "27:22:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Skills/Cleave.sol",
+        "file": "../Skills/Cleave.sol",
+        "id": 339,
+        "nodeType": "ImportDirective",
+        "scope": 361,
+        "sourceUnit": 940,
+        "src": "51:30:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -117,14 +148,14 @@
               {
                 "argumentTypes": null,
                 "hexValue": "42617262617269616e",
-                "id": 179,
+                "id": 341,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "string",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "81:11:2",
+                "src": "113:11:2",
                 "subdenomination": null,
                 "typeDescriptions": {
                   "typeIdentifier": "t_stringliteral_0ab285ead4e5a423913f229f3fbfc34aca3a126475494d2f02f8022e6147b70a",
@@ -135,14 +166,14 @@
               {
                 "argumentTypes": null,
                 "hexValue": "3230",
-                "id": 180,
+                "id": 342,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "94:2:2",
+                "src": "126:2:2",
                 "subdenomination": null,
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_20_by_1",
@@ -153,14 +184,14 @@
               {
                 "argumentTypes": null,
                 "hexValue": "32",
-                "id": 181,
+                "id": 343,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "98:1:2",
+                "src": "130:1:2",
                 "subdenomination": null,
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_2_by_1",
@@ -171,14 +202,14 @@
               {
                 "argumentTypes": null,
                 "hexValue": "32",
-                "id": 182,
+                "id": 344,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "101:1:2",
+                "src": "133:1:2",
                 "subdenomination": null,
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_2_by_1",
@@ -189,71 +220,224 @@
               {
                 "argumentTypes": null,
                 "hexValue": "3136",
-                "id": 183,
+                "id": 345,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "104:2:2",
+                "src": "136:2:2",
                 "subdenomination": null,
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_16_by_1",
                   "typeString": "int_const 16"
                 },
                 "value": "16"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "31",
+                "id": 346,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "140:1:2",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_1_by_1",
+                  "typeString": "int_const 1"
+                },
+                "value": "1"
               }
             ],
             "baseName": {
               "contractScope": null,
-              "id": 178,
+              "id": 340,
               "name": "Class",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 174,
-              "src": "75:5:2",
+              "referencedDeclaration": 335,
+              "src": "107:5:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Class_$174",
+                "typeIdentifier": "t_contract$_Class_$335",
                 "typeString": "contract Class"
               }
             },
-            "id": 184,
+            "id": 347,
             "nodeType": "InheritanceSpecifier",
-            "src": "75:32:2"
+            "src": "107:35:2"
           }
         ],
         "contractDependencies": [
-          174
+          335,
+          939
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 185,
+        "id": 360,
         "linearizedBaseContracts": [
-          185,
-          174
+          360,
+          335
         ],
         "name": "Barbarian",
         "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 186,
-        "src": "53:64:2"
+        "nodes": [
+          {
+            "body": {
+              "id": 358,
+              "nodeType": "Block",
+              "src": "169:45:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "id": 354,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "NewExpression",
+                          "src": "193:10:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_Cleave_$939_$",
+                            "typeString": "function () returns (contract Cleave)"
+                          },
+                          "typeName": {
+                            "contractScope": null,
+                            "id": 353,
+                            "name": "Cleave",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 939,
+                            "src": "197:6:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_Cleave_$939",
+                              "typeString": "contract Cleave"
+                            }
+                          }
+                        },
+                        "id": 355,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "193:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Cleave_$939",
+                          "typeString": "contract Cleave"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_Cleave_$939",
+                          "typeString": "contract Cleave"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 350,
+                        "name": "_skills",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 246,
+                        "src": "180:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_contract$_Skill_$917_$dyn_storage",
+                          "typeString": "contract Skill[] storage ref"
+                        }
+                      },
+                      "id": 352,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "180:12:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_contract$_Skill_$917_$returns$_t_uint256_$",
+                        "typeString": "function (contract Skill) returns (uint256)"
+                      }
+                    },
+                    "id": 356,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "180:26:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 357,
+                  "nodeType": "ExpressionStatement",
+                  "src": "180:26:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 359,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 348,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "160:2:2"
+            },
+            "returnParameters": {
+              "id": 349,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "169:0:2"
+            },
+            "scope": 360,
+            "src": "149:65:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 361,
+        "src": "85:132:2"
       }
     ],
-    "src": "0:117:2"
+    "src": "0:217:2"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Classes/Barbarian.sol",
     "exportedSymbols": {
       "Barbarian": [
-        185
+        360
       ]
     },
-    "id": 186,
+    "id": 361,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 176,
+        "id": 337,
         "literals": [
           "solidity",
           "^",
@@ -266,11 +450,22 @@
       {
         "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Class.sol",
         "file": "../Class.sol",
-        "id": 177,
+        "id": 338,
         "nodeType": "ImportDirective",
-        "scope": 186,
-        "sourceUnit": 175,
+        "scope": 361,
+        "sourceUnit": 336,
         "src": "27:22:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Skills/Cleave.sol",
+        "file": "../Skills/Cleave.sol",
+        "id": 339,
+        "nodeType": "ImportDirective",
+        "scope": 361,
+        "sourceUnit": 940,
+        "src": "51:30:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -281,14 +476,14 @@
               {
                 "argumentTypes": null,
                 "hexValue": "42617262617269616e",
-                "id": 179,
+                "id": 341,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "string",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "81:11:2",
+                "src": "113:11:2",
                 "subdenomination": null,
                 "typeDescriptions": {
                   "typeIdentifier": "t_stringliteral_0ab285ead4e5a423913f229f3fbfc34aca3a126475494d2f02f8022e6147b70a",
@@ -299,14 +494,14 @@
               {
                 "argumentTypes": null,
                 "hexValue": "3230",
-                "id": 180,
+                "id": 342,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "94:2:2",
+                "src": "126:2:2",
                 "subdenomination": null,
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_20_by_1",
@@ -317,14 +512,14 @@
               {
                 "argumentTypes": null,
                 "hexValue": "32",
-                "id": 181,
+                "id": 343,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "98:1:2",
+                "src": "130:1:2",
                 "subdenomination": null,
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_2_by_1",
@@ -335,14 +530,14 @@
               {
                 "argumentTypes": null,
                 "hexValue": "32",
-                "id": 182,
+                "id": 344,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "101:1:2",
+                "src": "133:1:2",
                 "subdenomination": null,
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_2_by_1",
@@ -353,58 +548,211 @@
               {
                 "argumentTypes": null,
                 "hexValue": "3136",
-                "id": 183,
+                "id": 345,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "104:2:2",
+                "src": "136:2:2",
                 "subdenomination": null,
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_16_by_1",
                   "typeString": "int_const 16"
                 },
                 "value": "16"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "31",
+                "id": 346,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "140:1:2",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_1_by_1",
+                  "typeString": "int_const 1"
+                },
+                "value": "1"
               }
             ],
             "baseName": {
               "contractScope": null,
-              "id": 178,
+              "id": 340,
               "name": "Class",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 174,
-              "src": "75:5:2",
+              "referencedDeclaration": 335,
+              "src": "107:5:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Class_$174",
+                "typeIdentifier": "t_contract$_Class_$335",
                 "typeString": "contract Class"
               }
             },
-            "id": 184,
+            "id": 347,
             "nodeType": "InheritanceSpecifier",
-            "src": "75:32:2"
+            "src": "107:35:2"
           }
         ],
         "contractDependencies": [
-          174
+          335,
+          939
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 185,
+        "id": 360,
         "linearizedBaseContracts": [
-          185,
-          174
+          360,
+          335
         ],
         "name": "Barbarian",
         "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 186,
-        "src": "53:64:2"
+        "nodes": [
+          {
+            "body": {
+              "id": 358,
+              "nodeType": "Block",
+              "src": "169:45:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "id": 354,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "NewExpression",
+                          "src": "193:10:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_Cleave_$939_$",
+                            "typeString": "function () returns (contract Cleave)"
+                          },
+                          "typeName": {
+                            "contractScope": null,
+                            "id": 353,
+                            "name": "Cleave",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 939,
+                            "src": "197:6:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_Cleave_$939",
+                              "typeString": "contract Cleave"
+                            }
+                          }
+                        },
+                        "id": 355,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "193:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Cleave_$939",
+                          "typeString": "contract Cleave"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_Cleave_$939",
+                          "typeString": "contract Cleave"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 350,
+                        "name": "_skills",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 246,
+                        "src": "180:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_contract$_Skill_$917_$dyn_storage",
+                          "typeString": "contract Skill[] storage ref"
+                        }
+                      },
+                      "id": 352,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "180:12:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_contract$_Skill_$917_$returns$_t_uint256_$",
+                        "typeString": "function (contract Skill) returns (uint256)"
+                      }
+                    },
+                    "id": 356,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "180:26:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 357,
+                  "nodeType": "ExpressionStatement",
+                  "src": "180:26:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 359,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 348,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "160:2:2"
+            },
+            "returnParameters": {
+              "id": 349,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "169:0:2"
+            },
+            "scope": 360,
+            "src": "149:65:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 361,
+        "src": "85:132:2"
       }
     ],
-    "src": "0:117:2"
+    "src": "0:217:2"
   },
   "compiler": {
     "name": "solc",
@@ -419,7 +767,7 @@
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-12T17:48:01.124Z",
+  "updatedAt": "2019-01-13T08:04:34.262Z",
   "devdoc": {
     "methods": {}
   },

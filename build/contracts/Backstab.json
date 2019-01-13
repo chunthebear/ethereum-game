@@ -1,24 +1,95 @@
 {
   "contractName": "Backstab",
-  "abi": [],
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058208481359c3e357a1e1661f4262e82413cc19c071a20e3ca39ed6aa281cf2076d30029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058208481359c3e357a1e1661f4262e82413cc19c071a20e3ca39ed6aa281cf2076d30029",
-  "sourceMap": "53:36:8:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:36:8;;;;;;;",
-  "deployedSourceMap": "53:36:8:-;;;;;",
-  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Spell.sol\";\r\n\r\ncontract Backstab is Spell{\r\n    \r\n}",
-  "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spells/Backstab.sol",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getName",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getClass",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getDamage",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getSkillType",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getLevelRequired",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60806040526040805190810160405280600881526020017f4261636b737461620000000000000000000000000000000000000000000000008152506001600a60036001846000908051906020019061005892919061007f565b50826002819055508360018190555081600381905550806004819055505050505050610124565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100c057805160ff19168380011785556100ee565b828001600101855582156100ee579182015b828111156100ed5782518255916020019190600101906100d2565b5b5090506100fb91906100ff565b5090565b61012191905b8082111561011d576000816000905550600101610105565b5090565b90565b6102a4806101336000396000f3fe60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c1461007257806357e61ea4146101025780635bd81ab51461012d578063a89e834314610158578063b7c4c13d14610183575b600080fd5b34801561007e57600080fd5b506100876101ae565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100c75780820151818401526020810190506100ac565b50505050905090810190601f1680156100f45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561010e57600080fd5b50610117610250565b6040518082815260200191505060405180910390f35b34801561013957600080fd5b5061014261025a565b6040518082815260200191505060405180910390f35b34801561016457600080fd5b5061016d610264565b6040518082815260200191505060405180910390f35b34801561018f57600080fd5b5061019861026e565b6040518082815260200191505060405180910390f35b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102465780601f1061021b57610100808354040283529160200191610246565b820191906000526020600020905b81548152906001019060200180831161022957829003601f168201915b5050505050905090565b6000600354905090565b6000600254905090565b6000600454905090565b600060015490509056fea165627a7a723058205308c007da1c3bc33eee968d6b38f3607d6f7fc43df0e663f5dbc26470677f710029",
+  "deployedBytecode": "0x60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c1461007257806357e61ea4146101025780635bd81ab51461012d578063a89e834314610158578063b7c4c13d14610183575b600080fd5b34801561007e57600080fd5b506100876101ae565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100c75780820151818401526020810190506100ac565b50505050905090810190601f1680156100f45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561010e57600080fd5b50610117610250565b6040518082815260200191505060405180910390f35b34801561013957600080fd5b5061014261025a565b6040518082815260200191505060405180910390f35b34801561016457600080fd5b5061016d610264565b6040518082815260200191505060405180910390f35b34801561018f57600080fd5b5061019861026e565b6040518082815260200191505060405180910390f35b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102465780601f1061021b57610100808354040283529160200191610246565b820191906000526020600020905b81548152906001019060200180831161022957829003601f168201915b5050505050905090565b6000600354905090565b6000600254905090565b6000600454905090565b600060015490509056fea165627a7a723058205308c007da1c3bc33eee968d6b38f3607d6f7fc43df0e663f5dbc26470677f710029",
+  "sourceMap": "53:61:10:-;;;264:257:9;;;;;;;;;;;;;;;;;;92:1:10;95:2;99:1;102;383:4:9;375:5;:12;;;;;;;;;;;;:::i;:::-;;408:6;398:7;:16;;;;442:13;425:14;:30;;;;475:5;466:6;:14;;;;504:9;491:10;:22;;;;264:257;;;;;53:61:10;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "53:61:10:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;529:84:9;;8:9:-1;5:2;;;30:1;27;20:12;5:2;529:84:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;529:84:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;809:77;;8:9:-1;5:2;;;30:1;27;20:12;5:2;809:77:9;;;;;;;;;;;;;;;;;;;;;;;722:79;;8:9:-1;5:2;;;30:1;27;20:12;5:2;722:79:9;;;;;;;;;;;;;;;;;;;;;;;894:85;;8:9:-1;5:2;;;30:1;27;20:12;5:2;894:85:9;;;;;;;;;;;;;;;;;;;;;;;621:93;;8:9:-1;5:2;;;30:1;27;20:12;5:2;621:93:9;;;;;;;;;;;;;;;;;;;;;;;529:84;568:13;600:5;593:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;529:84;:::o;809:77::-;849:4;872:6;;865:13;;809:77;:::o;722:79::-;763:4;786:7;;779:14;;722:79;:::o;894:85::-;938:4;961:10;;954:17;;894:85;:::o;621:93::-;669:4;692:14;;685:21;;621:93;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Skill.sol\";\r\n\r\ncontract Backstab is Skill(\"Backstab\", 1, 10, 3, 1){\r\n    \r\n}",
+  "sourcePath": "C:\\Users\\Yichun\\Documents\\Projects\\Programming\\ethereum-game\\contracts\\Skills\\Backstab.sol",
   "ast": {
-    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spells/Backstab.sol",
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Skills/Backstab.sol",
     "exportedSymbols": {
       "Backstab": [
-        252
+        928
       ]
     },
-    "id": 253,
+    "id": 929,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 248,
+        "id": 919,
         "literals": [
           "solidity",
           "^",
@@ -26,72 +97,163 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:8"
+        "src": "0:23:10"
       },
       {
-        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spell.sol",
-        "file": "../Spell.sol",
-        "id": 249,
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Skill.sol",
+        "file": "../Skill.sol",
+        "id": 920,
         "nodeType": "ImportDirective",
-        "scope": 253,
-        "sourceUnit": 247,
-        "src": "27:22:8",
+        "scope": 929,
+        "sourceUnit": 918,
+        "src": "27:22:10",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "baseContracts": [
           {
-            "arguments": null,
+            "arguments": [
+              {
+                "argumentTypes": null,
+                "hexValue": "4261636b73746162",
+                "id": 922,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "80:10:10",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_stringliteral_12f4429634a703210a21ff263e73deb147a5b4a1e760b2d615ec330545399d31",
+                  "typeString": "literal_string \"Backstab\""
+                },
+                "value": "Backstab"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "31",
+                "id": 923,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "92:1:10",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_1_by_1",
+                  "typeString": "int_const 1"
+                },
+                "value": "1"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "3130",
+                "id": 924,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "95:2:10",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_10_by_1",
+                  "typeString": "int_const 10"
+                },
+                "value": "10"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "33",
+                "id": 925,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "99:1:10",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_3_by_1",
+                  "typeString": "int_const 3"
+                },
+                "value": "3"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "31",
+                "id": 926,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "102:1:10",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_1_by_1",
+                  "typeString": "int_const 1"
+                },
+                "value": "1"
+              }
+            ],
             "baseName": {
               "contractScope": null,
-              "id": 250,
-              "name": "Spell",
+              "id": 921,
+              "name": "Skill",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 246,
-              "src": "74:5:8",
+              "referencedDeclaration": 917,
+              "src": "74:5:10",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Spell_$246",
-                "typeString": "contract Spell"
+                "typeIdentifier": "t_contract$_Skill_$917",
+                "typeString": "contract Skill"
               }
             },
-            "id": 251,
+            "id": 927,
             "nodeType": "InheritanceSpecifier",
-            "src": "74:5:8"
+            "src": "74:30:10"
           }
         ],
         "contractDependencies": [
-          246
+          917
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 252,
+        "id": 928,
         "linearizedBaseContracts": [
-          252,
-          246
+          928,
+          917
         ],
         "name": "Backstab",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 253,
-        "src": "53:36:8"
+        "scope": 929,
+        "src": "53:61:10"
       }
     ],
-    "src": "0:89:8"
+    "src": "0:114:10"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spells/Backstab.sol",
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Skills/Backstab.sol",
     "exportedSymbols": {
       "Backstab": [
-        252
+        928
       ]
     },
-    "id": 253,
+    "id": 929,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 248,
+        "id": 919,
         "literals": [
           "solidity",
           "^",
@@ -99,59 +261,150 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:8"
+        "src": "0:23:10"
       },
       {
-        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spell.sol",
-        "file": "../Spell.sol",
-        "id": 249,
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Skill.sol",
+        "file": "../Skill.sol",
+        "id": 920,
         "nodeType": "ImportDirective",
-        "scope": 253,
-        "sourceUnit": 247,
-        "src": "27:22:8",
+        "scope": 929,
+        "sourceUnit": 918,
+        "src": "27:22:10",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "baseContracts": [
           {
-            "arguments": null,
+            "arguments": [
+              {
+                "argumentTypes": null,
+                "hexValue": "4261636b73746162",
+                "id": 922,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "80:10:10",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_stringliteral_12f4429634a703210a21ff263e73deb147a5b4a1e760b2d615ec330545399d31",
+                  "typeString": "literal_string \"Backstab\""
+                },
+                "value": "Backstab"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "31",
+                "id": 923,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "92:1:10",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_1_by_1",
+                  "typeString": "int_const 1"
+                },
+                "value": "1"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "3130",
+                "id": 924,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "95:2:10",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_10_by_1",
+                  "typeString": "int_const 10"
+                },
+                "value": "10"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "33",
+                "id": 925,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "99:1:10",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_3_by_1",
+                  "typeString": "int_const 3"
+                },
+                "value": "3"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "31",
+                "id": 926,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "102:1:10",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_1_by_1",
+                  "typeString": "int_const 1"
+                },
+                "value": "1"
+              }
+            ],
             "baseName": {
               "contractScope": null,
-              "id": 250,
-              "name": "Spell",
+              "id": 921,
+              "name": "Skill",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 246,
-              "src": "74:5:8",
+              "referencedDeclaration": 917,
+              "src": "74:5:10",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Spell_$246",
-                "typeString": "contract Spell"
+                "typeIdentifier": "t_contract$_Skill_$917",
+                "typeString": "contract Skill"
               }
             },
-            "id": 251,
+            "id": 927,
             "nodeType": "InheritanceSpecifier",
-            "src": "74:5:8"
+            "src": "74:30:10"
           }
         ],
         "contractDependencies": [
-          246
+          917
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 252,
+        "id": 928,
         "linearizedBaseContracts": [
-          252,
-          246
+          928,
+          917
         ],
         "name": "Backstab",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 253,
-        "src": "53:36:8"
+        "scope": 929,
+        "src": "53:61:10"
       }
     ],
-    "src": "0:89:8"
+    "src": "0:114:10"
   },
   "compiler": {
     "name": "solc",
@@ -159,7 +412,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-11T22:28:17.022Z",
+  "updatedAt": "2019-01-13T08:05:18.543Z",
   "devdoc": {
     "methods": {}
   },

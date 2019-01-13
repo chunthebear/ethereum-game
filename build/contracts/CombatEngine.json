@@ -1,0 +1,2833 @@
+{
+  "contractName": "CombatEngine",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "attacker",
+          "type": "address"
+        },
+        {
+          "name": "defender",
+          "type": "address"
+        },
+        {
+          "name": "skill",
+          "type": "address"
+        }
+      ],
+      "name": "attack",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60806040526001600055600260015534801561001a57600080fd5b506108c08061002a6000396000f3fe608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680637bea12f514610046575b600080fd5b34801561005257600080fd5b506100d56004803603606081101561006957600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100eb565b6040518082815260200191505060405180910390f35b600080548273ffffffffffffffffffffffffffffffffffffffff1663a89e83436040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561015157600080fd5b505afa158015610165573d6000803e3d6000fd5b505050506040513d602081101561017b57600080fd5b810190808051906020019092919050505014156104c05760048473ffffffffffffffffffffffffffffffffffffffff1663e0f8b6ad6040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b1580156101f657600080fd5b505afa15801561020a573d6000803e3d6000fd5b505050506040513d602081101561022057600080fd5b810190808051906020019092919050505081151561023a57fe5b048373ffffffffffffffffffffffffffffffffffffffff1663f18ac3776040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561029d57600080fd5b505afa1580156102b1573d6000803e3d6000fd5b505050506040513d60208110156102c757600080fd5b810190808051906020019092919050505060028573ffffffffffffffffffffffffffffffffffffffff1663e0f8b6ad6040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561033c57600080fd5b505afa158015610350573d6000803e3d6000fd5b505050506040513d602081101561036657600080fd5b8101908080519060200190929190505050028673ffffffffffffffffffffffffffffffffffffffff1663e0f8b6ad6040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b1580156103da57600080fd5b505afa1580156103ee573d6000803e3d6000fd5b505050506040513d602081101561040457600080fd5b810190808051906020019092919050505060028873ffffffffffffffffffffffffffffffffffffffff1663f18ac3776040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561047957600080fd5b505afa15801561048d573d6000803e3d6000fd5b505050506040513d60208110156104a357600080fd5b81019080805190602001909291905050500201030101905061088d565b6001548273ffffffffffffffffffffffffffffffffffffffff1663a89e83436040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561052557600080fd5b505afa158015610539573d6000803e3d6000fd5b505050506040513d602081101561054f57600080fd5b81019080805190602001909291905050501415610888578273ffffffffffffffffffffffffffffffffffffffff1663bb94ea676040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b1580156105c857600080fd5b505afa1580156105dc573d6000803e3d6000fd5b505050506040513d60208110156105f257600080fd5b810190808051906020019092919050505060028473ffffffffffffffffffffffffffffffffffffffff1663e0f8b6ad6040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561066757600080fd5b505afa15801561067b573d6000803e3d6000fd5b505050506040513d602081101561069157600080fd5b8101908080519060200190929190505050028373ffffffffffffffffffffffffffffffffffffffff16635bd81ab56040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561070557600080fd5b505afa158015610719573d6000803e3d6000fd5b505050506040513d602081101561072f57600080fd5b81019080805190602001909291905050508673ffffffffffffffffffffffffffffffffffffffff1663e0f8b6ad6040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b1580156107a257600080fd5b505afa1580156107b6573d6000803e3d6000fd5b505050506040513d60208110156107cc57600080fd5b810190808051906020019092919050505060028873ffffffffffffffffffffffffffffffffffffffff1663bb94ea676040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561084157600080fd5b505afa158015610855573d6000803e3d6000fd5b505050506040513d602081101561086b57600080fd5b81019080805190602001909291905050500201010301905061088d565b600090505b939250505056fea165627a7a72305820b945af07784fa3bf41819d5446b5d35be31e292fe391e17f0b92942b3d1e9e220029",
+  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680637bea12f514610046575b600080fd5b34801561005257600080fd5b506100d56004803603606081101561006957600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100eb565b6040518082815260200191505060405180910390f35b600080548273ffffffffffffffffffffffffffffffffffffffff1663a89e83436040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561015157600080fd5b505afa158015610165573d6000803e3d6000fd5b505050506040513d602081101561017b57600080fd5b810190808051906020019092919050505014156104c05760048473ffffffffffffffffffffffffffffffffffffffff1663e0f8b6ad6040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b1580156101f657600080fd5b505afa15801561020a573d6000803e3d6000fd5b505050506040513d602081101561022057600080fd5b810190808051906020019092919050505081151561023a57fe5b048373ffffffffffffffffffffffffffffffffffffffff1663f18ac3776040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561029d57600080fd5b505afa1580156102b1573d6000803e3d6000fd5b505050506040513d60208110156102c757600080fd5b810190808051906020019092919050505060028573ffffffffffffffffffffffffffffffffffffffff1663e0f8b6ad6040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561033c57600080fd5b505afa158015610350573d6000803e3d6000fd5b505050506040513d602081101561036657600080fd5b8101908080519060200190929190505050028673ffffffffffffffffffffffffffffffffffffffff1663e0f8b6ad6040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b1580156103da57600080fd5b505afa1580156103ee573d6000803e3d6000fd5b505050506040513d602081101561040457600080fd5b810190808051906020019092919050505060028873ffffffffffffffffffffffffffffffffffffffff1663f18ac3776040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561047957600080fd5b505afa15801561048d573d6000803e3d6000fd5b505050506040513d60208110156104a357600080fd5b81019080805190602001909291905050500201030101905061088d565b6001548273ffffffffffffffffffffffffffffffffffffffff1663a89e83436040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561052557600080fd5b505afa158015610539573d6000803e3d6000fd5b505050506040513d602081101561054f57600080fd5b81019080805190602001909291905050501415610888578273ffffffffffffffffffffffffffffffffffffffff1663bb94ea676040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b1580156105c857600080fd5b505afa1580156105dc573d6000803e3d6000fd5b505050506040513d60208110156105f257600080fd5b810190808051906020019092919050505060028473ffffffffffffffffffffffffffffffffffffffff1663e0f8b6ad6040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561066757600080fd5b505afa15801561067b573d6000803e3d6000fd5b505050506040513d602081101561069157600080fd5b8101908080519060200190929190505050028373ffffffffffffffffffffffffffffffffffffffff16635bd81ab56040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561070557600080fd5b505afa158015610719573d6000803e3d6000fd5b505050506040513d602081101561072f57600080fd5b81019080805190602001909291905050508673ffffffffffffffffffffffffffffffffffffffff1663e0f8b6ad6040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b1580156107a257600080fd5b505afa1580156107b6573d6000803e3d6000fd5b505050506040513d60208110156107cc57600080fd5b810190808051906020019092919050505060028873ffffffffffffffffffffffffffffffffffffffff1663bb94ea676040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561084157600080fd5b505afa158015610855573d6000803e3d6000fd5b505050506040513d602081101561086b57600080fd5b81019080805190602001909291905050500201010301905061088d565b600090505b939250505056fea165627a7a72305820b945af07784fa3bf41819d5446b5d35be31e292fe391e17f0b92942b3d1e9e220029",
+  "sourceMap": "137:795:5:-;;;227:1;197:31;;264:1;235:30;;137:795;8:9:-1;5:2;;;30:1;27;20:12;5:2;137:795:5;;;;;;;",
+  "deployedSourceMap": "137:795:5:-;;;;;;;;;;;;;;;;;;;;;;;;276:653;;8:9:-1;5:2;;;30:1;27;20:12;5:2;276:653:5;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;276:653:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;366:4;463:14;;439:5;:18;;;:20;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;439:20:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;439:20:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;439:20:5;;;;;;;;;;;;;;;;:38;435:468;;;652:1;628:8;:19;;;:21;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;628:21:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;628:21:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;628:21:5;;;;;;;;;;;;;;;;:25;;;;;;;;603:8;:20;;;:22;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;603:22:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;603:22:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;603:22:5;;;;;;;;;;;;;;;;599:1;575:8;:19;;;:21;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;575:21:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;575:21:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;575:21:5;;;;;;;;;;;;;;;;:25;530:8;:19;;;:21;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;530:21:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;530:21:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;530:21:5;;;;;;;;;;;;;;;;526:1;501:8;:20;;;:22;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;501:22:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;501:22:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;501:22:5;;;;;;;;;;;;;;;;:26;:50;:99;:124;:152;493:161;;;;435:468;700:13;;676:5;:18;;;:20;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;676:20:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;676:20:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;676:20:5;;;;;;;;;;;;;;;;:37;672:231;;;864:8;:24;;;:26;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;864:26:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;864:26:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;864:26:5;;;;;;;;;;;;;;;;860:1;836:8;:19;;;:21;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;836:21:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;836:21:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;836:21:5;;;;;;;;;;;;;;;;:25;794:5;:15;;;:17;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;794:17:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;794:17:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;794:17:5;;;;;;;;;;;;;;;;770:8;:19;;;:21;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;770:21:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;770:21:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;770:21:5;;;;;;;;;;;;;;;;766:1;737:8;:24;;;:26;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;737:26:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;737:26:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;737:26:5;;;;;;;;;;;;;;;;:30;:54;:74;:124;:153;729:162;;;;672:231;920:1;913:8;;276:653;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"./Game.sol\";\r\nimport \"./Character.sol\";\r\nimport \"./Skill.sol\";\r\nimport \"./Libraries/SafeMath.sol\";\r\n\r\ncontract CombatEngine{\r\n    using SafeMath for uint;\r\n\r\n    uint private PHYSICAL_SKILL = 1;\r\n    uint private MAGICAL_SKILL = 2;\r\n\r\n\r\n    function attack(Character attacker, Character defender, Skill skill) public view returns (uint){\r\n        //strength is defence, agility is avoidance\r\n        if (skill.getSkillType() == PHYSICAL_SKILL){\r\n            return (attacker.getStrength() * 2 + attacker.getAgility() -\r\n                    defender.getAgility() * 2 + defender.getStrength() + attacker.getAgility() / 4);\r\n        } else if (skill.getSkillType() == MAGICAL_SKILL){\r\n            return (attacker.getIntelligence() * 2 + attacker.getAgility() + skill.getDamage() - \r\n                    defender.getAgility() * 2 + defender.getIntelligence());\r\n        }\r\n        return 0;\r\n    }\r\n}",
+  "sourcePath": "C:\\Users\\Yichun\\Documents\\Projects\\Programming\\ethereum-game\\contracts\\CombatEngine.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/CombatEngine.sol",
+    "exportedSymbols": {
+      "CombatEngine": [
+        506
+      ]
+    },
+    "id": 507,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 412,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Game.sol",
+        "file": "./Game.sol",
+        "id": 413,
+        "nodeType": "ImportDirective",
+        "scope": 507,
+        "sourceUnit": 645,
+        "src": "27:20:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Character.sol",
+        "file": "./Character.sol",
+        "id": 414,
+        "nodeType": "ImportDirective",
+        "scope": 507,
+        "sourceUnit": 229,
+        "src": "49:25:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Skill.sol",
+        "file": "./Skill.sol",
+        "id": 415,
+        "nodeType": "ImportDirective",
+        "scope": 507,
+        "sourceUnit": 918,
+        "src": "76:21:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Libraries/SafeMath.sol",
+        "file": "./Libraries/SafeMath.sol",
+        "id": 416,
+        "nodeType": "ImportDirective",
+        "scope": 507,
+        "sourceUnit": 773,
+        "src": "99:34:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 506,
+        "linearizedBaseContracts": [
+          506
+        ],
+        "name": "CombatEngine",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 419,
+            "libraryName": {
+              "contractScope": null,
+              "id": 417,
+              "name": "SafeMath",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 772,
+              "src": "171:8:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath_$772",
+                "typeString": "library SafeMath"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "165:24:5",
+            "typeName": {
+              "id": 418,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "184:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 422,
+            "name": "PHYSICAL_SKILL",
+            "nodeType": "VariableDeclaration",
+            "scope": 506,
+            "src": "197:31:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 420,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "197:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "31",
+              "id": 421,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "227:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1_by_1",
+                "typeString": "int_const 1"
+              },
+              "value": "1"
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 425,
+            "name": "MAGICAL_SKILL",
+            "nodeType": "VariableDeclaration",
+            "scope": 506,
+            "src": "235:30:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 423,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "235:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "32",
+              "id": 424,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "264:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_2_by_1",
+                "typeString": "int_const 2"
+              },
+              "value": "2"
+            },
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 504,
+              "nodeType": "Block",
+              "src": "371:558:5",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 440,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 436,
+                          "name": "skill",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 431,
+                          "src": "439:5:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_Skill_$917",
+                            "typeString": "contract Skill"
+                          }
+                        },
+                        "id": 437,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "getSkillType",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 916,
+                        "src": "439:18:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                          "typeString": "function () view external returns (uint256)"
+                        }
+                      },
+                      "id": 438,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "439:20:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 439,
+                      "name": "PHYSICAL_SKILL",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 422,
+                      "src": "463:14:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "439:38:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "condition": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 473,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 469,
+                            "name": "skill",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 431,
+                            "src": "676:5:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_Skill_$917",
+                              "typeString": "contract Skill"
+                            }
+                          },
+                          "id": 470,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "getSkillType",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 916,
+                          "src": "676:18:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                            "typeString": "function () view external returns (uint256)"
+                          }
+                        },
+                        "id": 471,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "676:20:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "==",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "id": 472,
+                        "name": "MAGICAL_SKILL",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 425,
+                        "src": "700:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "676:37:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "falseBody": null,
+                    "id": 500,
+                    "nodeType": "IfStatement",
+                    "src": "672:231:5",
+                    "trueBody": {
+                      "id": 499,
+                      "nodeType": "Block",
+                      "src": "714:189:5",
+                      "statements": [
+                        {
+                          "expression": {
+                            "argumentTypes": null,
+                            "components": [
+                              {
+                                "argumentTypes": null,
+                                "commonType": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                "id": 496,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "leftExpression": {
+                                  "argumentTypes": null,
+                                  "commonType": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  },
+                                  "id": 492,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "leftExpression": {
+                                    "argumentTypes": null,
+                                    "commonType": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    "id": 486,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "leftExpression": {
+                                      "argumentTypes": null,
+                                      "commonType": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      },
+                                      "id": 482,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "leftExpression": {
+                                        "argumentTypes": null,
+                                        "commonType": {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        },
+                                        "id": 478,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                          "argumentTypes": null,
+                                          "arguments": [],
+                                          "expression": {
+                                            "argumentTypes": [],
+                                            "expression": {
+                                              "argumentTypes": null,
+                                              "id": 474,
+                                              "name": "attacker",
+                                              "nodeType": "Identifier",
+                                              "overloadedDeclarations": [],
+                                              "referencedDeclaration": 427,
+                                              "src": "737:8:5",
+                                              "typeDescriptions": {
+                                                "typeIdentifier": "t_contract$_Character_$228",
+                                                "typeString": "contract Character"
+                                              }
+                                            },
+                                            "id": 475,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "getIntelligence",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 126,
+                                            "src": "737:24:5",
+                                            "typeDescriptions": {
+                                              "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                              "typeString": "function () view external returns (uint256)"
+                                            }
+                                          },
+                                          "id": 476,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "kind": "functionCall",
+                                          "lValueRequested": false,
+                                          "names": [],
+                                          "nodeType": "FunctionCall",
+                                          "src": "737:26:5",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                          }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": "*",
+                                        "rightExpression": {
+                                          "argumentTypes": null,
+                                          "hexValue": "32",
+                                          "id": 477,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": true,
+                                          "kind": "number",
+                                          "lValueRequested": false,
+                                          "nodeType": "Literal",
+                                          "src": "766:1:5",
+                                          "subdenomination": null,
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_rational_2_by_1",
+                                            "typeString": "int_const 2"
+                                          },
+                                          "value": "2"
+                                        },
+                                        "src": "737:30:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        }
+                                      },
+                                      "nodeType": "BinaryOperation",
+                                      "operator": "+",
+                                      "rightExpression": {
+                                        "argumentTypes": null,
+                                        "arguments": [],
+                                        "expression": {
+                                          "argumentTypes": [],
+                                          "expression": {
+                                            "argumentTypes": null,
+                                            "id": 479,
+                                            "name": "attacker",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 427,
+                                            "src": "770:8:5",
+                                            "typeDescriptions": {
+                                              "typeIdentifier": "t_contract$_Character_$228",
+                                              "typeString": "contract Character"
+                                            }
+                                          },
+                                          "id": 480,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "memberName": "getAgility",
+                                          "nodeType": "MemberAccess",
+                                          "referencedDeclaration": 113,
+                                          "src": "770:19:5",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                            "typeString": "function () view external returns (uint256)"
+                                          }
+                                        },
+                                        "id": 481,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "770:21:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        }
+                                      },
+                                      "src": "737:54:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "nodeType": "BinaryOperation",
+                                    "operator": "+",
+                                    "rightExpression": {
+                                      "argumentTypes": null,
+                                      "arguments": [],
+                                      "expression": {
+                                        "argumentTypes": [],
+                                        "expression": {
+                                          "argumentTypes": null,
+                                          "id": 483,
+                                          "name": "skill",
+                                          "nodeType": "Identifier",
+                                          "overloadedDeclarations": [],
+                                          "referencedDeclaration": 431,
+                                          "src": "794:5:5",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_Skill_$917",
+                                            "typeString": "contract Skill"
+                                          }
+                                        },
+                                        "id": 484,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "getDamage",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": 900,
+                                        "src": "794:15:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                          "typeString": "function () view external returns (uint256)"
+                                        }
+                                      },
+                                      "id": 485,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "kind": "functionCall",
+                                      "lValueRequested": false,
+                                      "names": [],
+                                      "nodeType": "FunctionCall",
+                                      "src": "794:17:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "src": "737:74:5",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  },
+                                  "nodeType": "BinaryOperation",
+                                  "operator": "-",
+                                  "rightExpression": {
+                                    "argumentTypes": null,
+                                    "commonType": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    "id": 491,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "leftExpression": {
+                                      "argumentTypes": null,
+                                      "arguments": [],
+                                      "expression": {
+                                        "argumentTypes": [],
+                                        "expression": {
+                                          "argumentTypes": null,
+                                          "id": 487,
+                                          "name": "defender",
+                                          "nodeType": "Identifier",
+                                          "overloadedDeclarations": [],
+                                          "referencedDeclaration": 429,
+                                          "src": "836:8:5",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_Character_$228",
+                                            "typeString": "contract Character"
+                                          }
+                                        },
+                                        "id": 488,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "getAgility",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": 113,
+                                        "src": "836:19:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                          "typeString": "function () view external returns (uint256)"
+                                        }
+                                      },
+                                      "id": 489,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "kind": "functionCall",
+                                      "lValueRequested": false,
+                                      "names": [],
+                                      "nodeType": "FunctionCall",
+                                      "src": "836:21:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "nodeType": "BinaryOperation",
+                                    "operator": "*",
+                                    "rightExpression": {
+                                      "argumentTypes": null,
+                                      "hexValue": "32",
+                                      "id": 490,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "kind": "number",
+                                      "lValueRequested": false,
+                                      "nodeType": "Literal",
+                                      "src": "860:1:5",
+                                      "subdenomination": null,
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_rational_2_by_1",
+                                        "typeString": "int_const 2"
+                                      },
+                                      "value": "2"
+                                    },
+                                    "src": "836:25:5",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  },
+                                  "src": "737:124:5",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "nodeType": "BinaryOperation",
+                                "operator": "+",
+                                "rightExpression": {
+                                  "argumentTypes": null,
+                                  "arguments": [],
+                                  "expression": {
+                                    "argumentTypes": [],
+                                    "expression": {
+                                      "argumentTypes": null,
+                                      "id": 493,
+                                      "name": "defender",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 429,
+                                      "src": "864:8:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_contract$_Character_$228",
+                                        "typeString": "contract Character"
+                                      }
+                                    },
+                                    "id": 494,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "getIntelligence",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 126,
+                                    "src": "864:24:5",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                      "typeString": "function () view external returns (uint256)"
+                                    }
+                                  },
+                                  "id": 495,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "functionCall",
+                                  "lValueRequested": false,
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "864:26:5",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "src": "737:153:5",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              }
+                            ],
+                            "id": 497,
+                            "isConstant": false,
+                            "isInlineArray": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "TupleExpression",
+                            "src": "736:155:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "functionReturnParameters": 435,
+                          "id": 498,
+                          "nodeType": "Return",
+                          "src": "729:162:5"
+                        }
+                      ]
+                    }
+                  },
+                  "id": 501,
+                  "nodeType": "IfStatement",
+                  "src": "435:468:5",
+                  "trueBody": {
+                    "id": 468,
+                    "nodeType": "Block",
+                    "src": "478:188:5",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "components": [
+                            {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "id": 465,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "leftExpression": {
+                                "argumentTypes": null,
+                                "commonType": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                "id": 459,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "leftExpression": {
+                                  "argumentTypes": null,
+                                  "commonType": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  },
+                                  "id": 455,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "leftExpression": {
+                                    "argumentTypes": null,
+                                    "commonType": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    "id": 449,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "leftExpression": {
+                                      "argumentTypes": null,
+                                      "commonType": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      },
+                                      "id": 445,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "leftExpression": {
+                                        "argumentTypes": null,
+                                        "arguments": [],
+                                        "expression": {
+                                          "argumentTypes": [],
+                                          "expression": {
+                                            "argumentTypes": null,
+                                            "id": 441,
+                                            "name": "attacker",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 427,
+                                            "src": "501:8:5",
+                                            "typeDescriptions": {
+                                              "typeIdentifier": "t_contract$_Character_$228",
+                                              "typeString": "contract Character"
+                                            }
+                                          },
+                                          "id": 442,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "memberName": "getStrength",
+                                          "nodeType": "MemberAccess",
+                                          "referencedDeclaration": 139,
+                                          "src": "501:20:5",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                            "typeString": "function () view external returns (uint256)"
+                                          }
+                                        },
+                                        "id": 443,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "501:22:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        }
+                                      },
+                                      "nodeType": "BinaryOperation",
+                                      "operator": "*",
+                                      "rightExpression": {
+                                        "argumentTypes": null,
+                                        "hexValue": "32",
+                                        "id": 444,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": true,
+                                        "kind": "number",
+                                        "lValueRequested": false,
+                                        "nodeType": "Literal",
+                                        "src": "526:1:5",
+                                        "subdenomination": null,
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_rational_2_by_1",
+                                          "typeString": "int_const 2"
+                                        },
+                                        "value": "2"
+                                      },
+                                      "src": "501:26:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "nodeType": "BinaryOperation",
+                                    "operator": "+",
+                                    "rightExpression": {
+                                      "argumentTypes": null,
+                                      "arguments": [],
+                                      "expression": {
+                                        "argumentTypes": [],
+                                        "expression": {
+                                          "argumentTypes": null,
+                                          "id": 446,
+                                          "name": "attacker",
+                                          "nodeType": "Identifier",
+                                          "overloadedDeclarations": [],
+                                          "referencedDeclaration": 427,
+                                          "src": "530:8:5",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_Character_$228",
+                                            "typeString": "contract Character"
+                                          }
+                                        },
+                                        "id": 447,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "getAgility",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": 113,
+                                        "src": "530:19:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                          "typeString": "function () view external returns (uint256)"
+                                        }
+                                      },
+                                      "id": 448,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "kind": "functionCall",
+                                      "lValueRequested": false,
+                                      "names": [],
+                                      "nodeType": "FunctionCall",
+                                      "src": "530:21:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "src": "501:50:5",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  },
+                                  "nodeType": "BinaryOperation",
+                                  "operator": "-",
+                                  "rightExpression": {
+                                    "argumentTypes": null,
+                                    "commonType": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    "id": 454,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "leftExpression": {
+                                      "argumentTypes": null,
+                                      "arguments": [],
+                                      "expression": {
+                                        "argumentTypes": [],
+                                        "expression": {
+                                          "argumentTypes": null,
+                                          "id": 450,
+                                          "name": "defender",
+                                          "nodeType": "Identifier",
+                                          "overloadedDeclarations": [],
+                                          "referencedDeclaration": 429,
+                                          "src": "575:8:5",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_Character_$228",
+                                            "typeString": "contract Character"
+                                          }
+                                        },
+                                        "id": 451,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "getAgility",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": 113,
+                                        "src": "575:19:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                          "typeString": "function () view external returns (uint256)"
+                                        }
+                                      },
+                                      "id": 452,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "kind": "functionCall",
+                                      "lValueRequested": false,
+                                      "names": [],
+                                      "nodeType": "FunctionCall",
+                                      "src": "575:21:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "nodeType": "BinaryOperation",
+                                    "operator": "*",
+                                    "rightExpression": {
+                                      "argumentTypes": null,
+                                      "hexValue": "32",
+                                      "id": 453,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "kind": "number",
+                                      "lValueRequested": false,
+                                      "nodeType": "Literal",
+                                      "src": "599:1:5",
+                                      "subdenomination": null,
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_rational_2_by_1",
+                                        "typeString": "int_const 2"
+                                      },
+                                      "value": "2"
+                                    },
+                                    "src": "575:25:5",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  },
+                                  "src": "501:99:5",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "nodeType": "BinaryOperation",
+                                "operator": "+",
+                                "rightExpression": {
+                                  "argumentTypes": null,
+                                  "arguments": [],
+                                  "expression": {
+                                    "argumentTypes": [],
+                                    "expression": {
+                                      "argumentTypes": null,
+                                      "id": 456,
+                                      "name": "defender",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 429,
+                                      "src": "603:8:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_contract$_Character_$228",
+                                        "typeString": "contract Character"
+                                      }
+                                    },
+                                    "id": 457,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "getStrength",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 139,
+                                    "src": "603:20:5",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                      "typeString": "function () view external returns (uint256)"
+                                    }
+                                  },
+                                  "id": 458,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "functionCall",
+                                  "lValueRequested": false,
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "603:22:5",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "src": "501:124:5",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "nodeType": "BinaryOperation",
+                              "operator": "+",
+                              "rightExpression": {
+                                "argumentTypes": null,
+                                "commonType": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                "id": 464,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "leftExpression": {
+                                  "argumentTypes": null,
+                                  "arguments": [],
+                                  "expression": {
+                                    "argumentTypes": [],
+                                    "expression": {
+                                      "argumentTypes": null,
+                                      "id": 460,
+                                      "name": "attacker",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 427,
+                                      "src": "628:8:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_contract$_Character_$228",
+                                        "typeString": "contract Character"
+                                      }
+                                    },
+                                    "id": 461,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "getAgility",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 113,
+                                    "src": "628:19:5",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                      "typeString": "function () view external returns (uint256)"
+                                    }
+                                  },
+                                  "id": 462,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "functionCall",
+                                  "lValueRequested": false,
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "628:21:5",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "nodeType": "BinaryOperation",
+                                "operator": "/",
+                                "rightExpression": {
+                                  "argumentTypes": null,
+                                  "hexValue": "34",
+                                  "id": 463,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "kind": "number",
+                                  "lValueRequested": false,
+                                  "nodeType": "Literal",
+                                  "src": "652:1:5",
+                                  "subdenomination": null,
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_rational_4_by_1",
+                                    "typeString": "int_const 4"
+                                  },
+                                  "value": "4"
+                                },
+                                "src": "628:25:5",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "src": "501:152:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            }
+                          ],
+                          "id": 466,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "TupleExpression",
+                          "src": "500:154:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 435,
+                        "id": 467,
+                        "nodeType": "Return",
+                        "src": "493:161:5"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "30",
+                    "id": 502,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "920:1:5",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  },
+                  "functionReturnParameters": 435,
+                  "id": 503,
+                  "nodeType": "Return",
+                  "src": "913:8:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 505,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "attack",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 432,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 427,
+                  "name": "attacker",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 505,
+                  "src": "292:18:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Character_$228",
+                    "typeString": "contract Character"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 426,
+                    "name": "Character",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 228,
+                    "src": "292:9:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Character_$228",
+                      "typeString": "contract Character"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 429,
+                  "name": "defender",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 505,
+                  "src": "312:18:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Character_$228",
+                    "typeString": "contract Character"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 428,
+                    "name": "Character",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 228,
+                    "src": "312:9:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Character_$228",
+                      "typeString": "contract Character"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 431,
+                  "name": "skill",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 505,
+                  "src": "332:11:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Skill_$917",
+                    "typeString": "contract Skill"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 430,
+                    "name": "Skill",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 917,
+                    "src": "332:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Skill_$917",
+                      "typeString": "contract Skill"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "291:53:5"
+            },
+            "returnParameters": {
+              "id": 435,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 434,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 505,
+                  "src": "366:4:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 433,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "366:4:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "365:6:5"
+            },
+            "scope": 506,
+            "src": "276:653:5",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 507,
+        "src": "137:795:5"
+      }
+    ],
+    "src": "0:932:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/CombatEngine.sol",
+    "exportedSymbols": {
+      "CombatEngine": [
+        506
+      ]
+    },
+    "id": 507,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 412,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Game.sol",
+        "file": "./Game.sol",
+        "id": 413,
+        "nodeType": "ImportDirective",
+        "scope": 507,
+        "sourceUnit": 645,
+        "src": "27:20:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Character.sol",
+        "file": "./Character.sol",
+        "id": 414,
+        "nodeType": "ImportDirective",
+        "scope": 507,
+        "sourceUnit": 229,
+        "src": "49:25:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Skill.sol",
+        "file": "./Skill.sol",
+        "id": 415,
+        "nodeType": "ImportDirective",
+        "scope": 507,
+        "sourceUnit": 918,
+        "src": "76:21:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Libraries/SafeMath.sol",
+        "file": "./Libraries/SafeMath.sol",
+        "id": 416,
+        "nodeType": "ImportDirective",
+        "scope": 507,
+        "sourceUnit": 773,
+        "src": "99:34:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 506,
+        "linearizedBaseContracts": [
+          506
+        ],
+        "name": "CombatEngine",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 419,
+            "libraryName": {
+              "contractScope": null,
+              "id": 417,
+              "name": "SafeMath",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 772,
+              "src": "171:8:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath_$772",
+                "typeString": "library SafeMath"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "165:24:5",
+            "typeName": {
+              "id": 418,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "184:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 422,
+            "name": "PHYSICAL_SKILL",
+            "nodeType": "VariableDeclaration",
+            "scope": 506,
+            "src": "197:31:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 420,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "197:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "31",
+              "id": 421,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "227:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1_by_1",
+                "typeString": "int_const 1"
+              },
+              "value": "1"
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 425,
+            "name": "MAGICAL_SKILL",
+            "nodeType": "VariableDeclaration",
+            "scope": 506,
+            "src": "235:30:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 423,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "235:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "32",
+              "id": 424,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "264:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_2_by_1",
+                "typeString": "int_const 2"
+              },
+              "value": "2"
+            },
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 504,
+              "nodeType": "Block",
+              "src": "371:558:5",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 440,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 436,
+                          "name": "skill",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 431,
+                          "src": "439:5:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_Skill_$917",
+                            "typeString": "contract Skill"
+                          }
+                        },
+                        "id": 437,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "getSkillType",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 916,
+                        "src": "439:18:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                          "typeString": "function () view external returns (uint256)"
+                        }
+                      },
+                      "id": 438,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "439:20:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 439,
+                      "name": "PHYSICAL_SKILL",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 422,
+                      "src": "463:14:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "439:38:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "condition": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 473,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 469,
+                            "name": "skill",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 431,
+                            "src": "676:5:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_Skill_$917",
+                              "typeString": "contract Skill"
+                            }
+                          },
+                          "id": 470,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "getSkillType",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 916,
+                          "src": "676:18:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                            "typeString": "function () view external returns (uint256)"
+                          }
+                        },
+                        "id": 471,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "676:20:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "==",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "id": 472,
+                        "name": "MAGICAL_SKILL",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 425,
+                        "src": "700:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "676:37:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "falseBody": null,
+                    "id": 500,
+                    "nodeType": "IfStatement",
+                    "src": "672:231:5",
+                    "trueBody": {
+                      "id": 499,
+                      "nodeType": "Block",
+                      "src": "714:189:5",
+                      "statements": [
+                        {
+                          "expression": {
+                            "argumentTypes": null,
+                            "components": [
+                              {
+                                "argumentTypes": null,
+                                "commonType": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                "id": 496,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "leftExpression": {
+                                  "argumentTypes": null,
+                                  "commonType": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  },
+                                  "id": 492,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "leftExpression": {
+                                    "argumentTypes": null,
+                                    "commonType": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    "id": 486,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "leftExpression": {
+                                      "argumentTypes": null,
+                                      "commonType": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      },
+                                      "id": 482,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "leftExpression": {
+                                        "argumentTypes": null,
+                                        "commonType": {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        },
+                                        "id": 478,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                          "argumentTypes": null,
+                                          "arguments": [],
+                                          "expression": {
+                                            "argumentTypes": [],
+                                            "expression": {
+                                              "argumentTypes": null,
+                                              "id": 474,
+                                              "name": "attacker",
+                                              "nodeType": "Identifier",
+                                              "overloadedDeclarations": [],
+                                              "referencedDeclaration": 427,
+                                              "src": "737:8:5",
+                                              "typeDescriptions": {
+                                                "typeIdentifier": "t_contract$_Character_$228",
+                                                "typeString": "contract Character"
+                                              }
+                                            },
+                                            "id": 475,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "getIntelligence",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 126,
+                                            "src": "737:24:5",
+                                            "typeDescriptions": {
+                                              "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                              "typeString": "function () view external returns (uint256)"
+                                            }
+                                          },
+                                          "id": 476,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "kind": "functionCall",
+                                          "lValueRequested": false,
+                                          "names": [],
+                                          "nodeType": "FunctionCall",
+                                          "src": "737:26:5",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                          }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": "*",
+                                        "rightExpression": {
+                                          "argumentTypes": null,
+                                          "hexValue": "32",
+                                          "id": 477,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": true,
+                                          "kind": "number",
+                                          "lValueRequested": false,
+                                          "nodeType": "Literal",
+                                          "src": "766:1:5",
+                                          "subdenomination": null,
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_rational_2_by_1",
+                                            "typeString": "int_const 2"
+                                          },
+                                          "value": "2"
+                                        },
+                                        "src": "737:30:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        }
+                                      },
+                                      "nodeType": "BinaryOperation",
+                                      "operator": "+",
+                                      "rightExpression": {
+                                        "argumentTypes": null,
+                                        "arguments": [],
+                                        "expression": {
+                                          "argumentTypes": [],
+                                          "expression": {
+                                            "argumentTypes": null,
+                                            "id": 479,
+                                            "name": "attacker",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 427,
+                                            "src": "770:8:5",
+                                            "typeDescriptions": {
+                                              "typeIdentifier": "t_contract$_Character_$228",
+                                              "typeString": "contract Character"
+                                            }
+                                          },
+                                          "id": 480,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "memberName": "getAgility",
+                                          "nodeType": "MemberAccess",
+                                          "referencedDeclaration": 113,
+                                          "src": "770:19:5",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                            "typeString": "function () view external returns (uint256)"
+                                          }
+                                        },
+                                        "id": 481,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "770:21:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        }
+                                      },
+                                      "src": "737:54:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "nodeType": "BinaryOperation",
+                                    "operator": "+",
+                                    "rightExpression": {
+                                      "argumentTypes": null,
+                                      "arguments": [],
+                                      "expression": {
+                                        "argumentTypes": [],
+                                        "expression": {
+                                          "argumentTypes": null,
+                                          "id": 483,
+                                          "name": "skill",
+                                          "nodeType": "Identifier",
+                                          "overloadedDeclarations": [],
+                                          "referencedDeclaration": 431,
+                                          "src": "794:5:5",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_Skill_$917",
+                                            "typeString": "contract Skill"
+                                          }
+                                        },
+                                        "id": 484,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "getDamage",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": 900,
+                                        "src": "794:15:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                          "typeString": "function () view external returns (uint256)"
+                                        }
+                                      },
+                                      "id": 485,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "kind": "functionCall",
+                                      "lValueRequested": false,
+                                      "names": [],
+                                      "nodeType": "FunctionCall",
+                                      "src": "794:17:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "src": "737:74:5",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  },
+                                  "nodeType": "BinaryOperation",
+                                  "operator": "-",
+                                  "rightExpression": {
+                                    "argumentTypes": null,
+                                    "commonType": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    "id": 491,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "leftExpression": {
+                                      "argumentTypes": null,
+                                      "arguments": [],
+                                      "expression": {
+                                        "argumentTypes": [],
+                                        "expression": {
+                                          "argumentTypes": null,
+                                          "id": 487,
+                                          "name": "defender",
+                                          "nodeType": "Identifier",
+                                          "overloadedDeclarations": [],
+                                          "referencedDeclaration": 429,
+                                          "src": "836:8:5",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_Character_$228",
+                                            "typeString": "contract Character"
+                                          }
+                                        },
+                                        "id": 488,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "getAgility",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": 113,
+                                        "src": "836:19:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                          "typeString": "function () view external returns (uint256)"
+                                        }
+                                      },
+                                      "id": 489,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "kind": "functionCall",
+                                      "lValueRequested": false,
+                                      "names": [],
+                                      "nodeType": "FunctionCall",
+                                      "src": "836:21:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "nodeType": "BinaryOperation",
+                                    "operator": "*",
+                                    "rightExpression": {
+                                      "argumentTypes": null,
+                                      "hexValue": "32",
+                                      "id": 490,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "kind": "number",
+                                      "lValueRequested": false,
+                                      "nodeType": "Literal",
+                                      "src": "860:1:5",
+                                      "subdenomination": null,
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_rational_2_by_1",
+                                        "typeString": "int_const 2"
+                                      },
+                                      "value": "2"
+                                    },
+                                    "src": "836:25:5",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  },
+                                  "src": "737:124:5",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "nodeType": "BinaryOperation",
+                                "operator": "+",
+                                "rightExpression": {
+                                  "argumentTypes": null,
+                                  "arguments": [],
+                                  "expression": {
+                                    "argumentTypes": [],
+                                    "expression": {
+                                      "argumentTypes": null,
+                                      "id": 493,
+                                      "name": "defender",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 429,
+                                      "src": "864:8:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_contract$_Character_$228",
+                                        "typeString": "contract Character"
+                                      }
+                                    },
+                                    "id": 494,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "getIntelligence",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 126,
+                                    "src": "864:24:5",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                      "typeString": "function () view external returns (uint256)"
+                                    }
+                                  },
+                                  "id": 495,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "functionCall",
+                                  "lValueRequested": false,
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "864:26:5",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "src": "737:153:5",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              }
+                            ],
+                            "id": 497,
+                            "isConstant": false,
+                            "isInlineArray": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "TupleExpression",
+                            "src": "736:155:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "functionReturnParameters": 435,
+                          "id": 498,
+                          "nodeType": "Return",
+                          "src": "729:162:5"
+                        }
+                      ]
+                    }
+                  },
+                  "id": 501,
+                  "nodeType": "IfStatement",
+                  "src": "435:468:5",
+                  "trueBody": {
+                    "id": 468,
+                    "nodeType": "Block",
+                    "src": "478:188:5",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "components": [
+                            {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "id": 465,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "leftExpression": {
+                                "argumentTypes": null,
+                                "commonType": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                "id": 459,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "leftExpression": {
+                                  "argumentTypes": null,
+                                  "commonType": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  },
+                                  "id": 455,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "leftExpression": {
+                                    "argumentTypes": null,
+                                    "commonType": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    "id": 449,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "leftExpression": {
+                                      "argumentTypes": null,
+                                      "commonType": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      },
+                                      "id": 445,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "leftExpression": {
+                                        "argumentTypes": null,
+                                        "arguments": [],
+                                        "expression": {
+                                          "argumentTypes": [],
+                                          "expression": {
+                                            "argumentTypes": null,
+                                            "id": 441,
+                                            "name": "attacker",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 427,
+                                            "src": "501:8:5",
+                                            "typeDescriptions": {
+                                              "typeIdentifier": "t_contract$_Character_$228",
+                                              "typeString": "contract Character"
+                                            }
+                                          },
+                                          "id": 442,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "memberName": "getStrength",
+                                          "nodeType": "MemberAccess",
+                                          "referencedDeclaration": 139,
+                                          "src": "501:20:5",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                            "typeString": "function () view external returns (uint256)"
+                                          }
+                                        },
+                                        "id": 443,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "501:22:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        }
+                                      },
+                                      "nodeType": "BinaryOperation",
+                                      "operator": "*",
+                                      "rightExpression": {
+                                        "argumentTypes": null,
+                                        "hexValue": "32",
+                                        "id": 444,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": true,
+                                        "kind": "number",
+                                        "lValueRequested": false,
+                                        "nodeType": "Literal",
+                                        "src": "526:1:5",
+                                        "subdenomination": null,
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_rational_2_by_1",
+                                          "typeString": "int_const 2"
+                                        },
+                                        "value": "2"
+                                      },
+                                      "src": "501:26:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "nodeType": "BinaryOperation",
+                                    "operator": "+",
+                                    "rightExpression": {
+                                      "argumentTypes": null,
+                                      "arguments": [],
+                                      "expression": {
+                                        "argumentTypes": [],
+                                        "expression": {
+                                          "argumentTypes": null,
+                                          "id": 446,
+                                          "name": "attacker",
+                                          "nodeType": "Identifier",
+                                          "overloadedDeclarations": [],
+                                          "referencedDeclaration": 427,
+                                          "src": "530:8:5",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_Character_$228",
+                                            "typeString": "contract Character"
+                                          }
+                                        },
+                                        "id": 447,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "getAgility",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": 113,
+                                        "src": "530:19:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                          "typeString": "function () view external returns (uint256)"
+                                        }
+                                      },
+                                      "id": 448,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "kind": "functionCall",
+                                      "lValueRequested": false,
+                                      "names": [],
+                                      "nodeType": "FunctionCall",
+                                      "src": "530:21:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "src": "501:50:5",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  },
+                                  "nodeType": "BinaryOperation",
+                                  "operator": "-",
+                                  "rightExpression": {
+                                    "argumentTypes": null,
+                                    "commonType": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    "id": 454,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "leftExpression": {
+                                      "argumentTypes": null,
+                                      "arguments": [],
+                                      "expression": {
+                                        "argumentTypes": [],
+                                        "expression": {
+                                          "argumentTypes": null,
+                                          "id": 450,
+                                          "name": "defender",
+                                          "nodeType": "Identifier",
+                                          "overloadedDeclarations": [],
+                                          "referencedDeclaration": 429,
+                                          "src": "575:8:5",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_Character_$228",
+                                            "typeString": "contract Character"
+                                          }
+                                        },
+                                        "id": 451,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "getAgility",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": 113,
+                                        "src": "575:19:5",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                          "typeString": "function () view external returns (uint256)"
+                                        }
+                                      },
+                                      "id": 452,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "kind": "functionCall",
+                                      "lValueRequested": false,
+                                      "names": [],
+                                      "nodeType": "FunctionCall",
+                                      "src": "575:21:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "nodeType": "BinaryOperation",
+                                    "operator": "*",
+                                    "rightExpression": {
+                                      "argumentTypes": null,
+                                      "hexValue": "32",
+                                      "id": 453,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "kind": "number",
+                                      "lValueRequested": false,
+                                      "nodeType": "Literal",
+                                      "src": "599:1:5",
+                                      "subdenomination": null,
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_rational_2_by_1",
+                                        "typeString": "int_const 2"
+                                      },
+                                      "value": "2"
+                                    },
+                                    "src": "575:25:5",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  },
+                                  "src": "501:99:5",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "nodeType": "BinaryOperation",
+                                "operator": "+",
+                                "rightExpression": {
+                                  "argumentTypes": null,
+                                  "arguments": [],
+                                  "expression": {
+                                    "argumentTypes": [],
+                                    "expression": {
+                                      "argumentTypes": null,
+                                      "id": 456,
+                                      "name": "defender",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 429,
+                                      "src": "603:8:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_contract$_Character_$228",
+                                        "typeString": "contract Character"
+                                      }
+                                    },
+                                    "id": 457,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "getStrength",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 139,
+                                    "src": "603:20:5",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                      "typeString": "function () view external returns (uint256)"
+                                    }
+                                  },
+                                  "id": 458,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "functionCall",
+                                  "lValueRequested": false,
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "603:22:5",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "src": "501:124:5",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "nodeType": "BinaryOperation",
+                              "operator": "+",
+                              "rightExpression": {
+                                "argumentTypes": null,
+                                "commonType": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                "id": 464,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "leftExpression": {
+                                  "argumentTypes": null,
+                                  "arguments": [],
+                                  "expression": {
+                                    "argumentTypes": [],
+                                    "expression": {
+                                      "argumentTypes": null,
+                                      "id": 460,
+                                      "name": "attacker",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 427,
+                                      "src": "628:8:5",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_contract$_Character_$228",
+                                        "typeString": "contract Character"
+                                      }
+                                    },
+                                    "id": 461,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "getAgility",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 113,
+                                    "src": "628:19:5",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
+                                      "typeString": "function () view external returns (uint256)"
+                                    }
+                                  },
+                                  "id": 462,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "kind": "functionCall",
+                                  "lValueRequested": false,
+                                  "names": [],
+                                  "nodeType": "FunctionCall",
+                                  "src": "628:21:5",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "nodeType": "BinaryOperation",
+                                "operator": "/",
+                                "rightExpression": {
+                                  "argumentTypes": null,
+                                  "hexValue": "34",
+                                  "id": 463,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "kind": "number",
+                                  "lValueRequested": false,
+                                  "nodeType": "Literal",
+                                  "src": "652:1:5",
+                                  "subdenomination": null,
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_rational_4_by_1",
+                                    "typeString": "int_const 4"
+                                  },
+                                  "value": "4"
+                                },
+                                "src": "628:25:5",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "src": "501:152:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            }
+                          ],
+                          "id": 466,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "TupleExpression",
+                          "src": "500:154:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "functionReturnParameters": 435,
+                        "id": 467,
+                        "nodeType": "Return",
+                        "src": "493:161:5"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "30",
+                    "id": 502,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "920:1:5",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  },
+                  "functionReturnParameters": 435,
+                  "id": 503,
+                  "nodeType": "Return",
+                  "src": "913:8:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 505,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "attack",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 432,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 427,
+                  "name": "attacker",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 505,
+                  "src": "292:18:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Character_$228",
+                    "typeString": "contract Character"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 426,
+                    "name": "Character",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 228,
+                    "src": "292:9:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Character_$228",
+                      "typeString": "contract Character"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 429,
+                  "name": "defender",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 505,
+                  "src": "312:18:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Character_$228",
+                    "typeString": "contract Character"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 428,
+                    "name": "Character",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 228,
+                    "src": "312:9:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Character_$228",
+                      "typeString": "contract Character"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 431,
+                  "name": "skill",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 505,
+                  "src": "332:11:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Skill_$917",
+                    "typeString": "contract Skill"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 430,
+                    "name": "Skill",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 917,
+                    "src": "332:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Skill_$917",
+                      "typeString": "contract Skill"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "291:53:5"
+            },
+            "returnParameters": {
+              "id": 435,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 434,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 505,
+                  "src": "366:4:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 433,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "366:4:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "365:6:5"
+            },
+            "scope": 506,
+            "src": "276:653:5",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 507,
+        "src": "137:795:5"
+      }
+    ],
+    "src": "0:932:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-01-13T08:05:18.553Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

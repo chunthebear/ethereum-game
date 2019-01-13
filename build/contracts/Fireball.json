@@ -1,24 +1,95 @@
 {
   "contractName": "Fireball",
-  "abi": [],
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820b46b1e5954e9b3bdd744e44d1fbd564663eb7d8cd797604c853f32e89d6cade40029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820b46b1e5954e9b3bdd744e44d1fbd564663eb7d8cd797604c853f32e89d6cade40029",
-  "sourceMap": "53:36:10:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:36:10;;;;;;;",
-  "deployedSourceMap": "53:36:10:-;;;;;",
-  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Spell.sol\";\r\n\r\ncontract Fireball is Spell{\r\n    \r\n}",
-  "sourcePath": "C:/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spells/Fireball.sol",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getName",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getClass",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getDamage",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getSkillType",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getLevelRequired",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60806040526040805190810160405280600881526020017f4669726562616c6c0000000000000000000000000000000000000000000000008152506001600f600280846000908051906020019061005792919061007e565b50826002819055508360018190555081600381905550806004819055505050505050610123565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100bf57805160ff19168380011785556100ed565b828001600101855582156100ed579182015b828111156100ec5782518255916020019190600101906100d1565b5b5090506100fa91906100fe565b5090565b61012091905b8082111561011c576000816000905550600101610104565b5090565b90565b6102a4806101326000396000f3fe60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c1461007257806357e61ea4146101025780635bd81ab51461012d578063a89e834314610158578063b7c4c13d14610183575b600080fd5b34801561007e57600080fd5b506100876101ae565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100c75780820151818401526020810190506100ac565b50505050905090810190601f1680156100f45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561010e57600080fd5b50610117610250565b6040518082815260200191505060405180910390f35b34801561013957600080fd5b5061014261025a565b6040518082815260200191505060405180910390f35b34801561016457600080fd5b5061016d610264565b6040518082815260200191505060405180910390f35b34801561018f57600080fd5b5061019861026e565b6040518082815260200191505060405180910390f35b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102465780601f1061021b57610100808354040283529160200191610246565b820191906000526020600020905b81548152906001019060200180831161022957829003601f168201915b5050505050905090565b6000600354905090565b6000600254905090565b6000600454905090565b600060015490509056fea165627a7a72305820e1c9c2daeb8e030c391cff483ef1a62dd10ed4f710ac751ff7e9aef95d580caa0029",
+  "deployedBytecode": "0x60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317d7de7c1461007257806357e61ea4146101025780635bd81ab51461012d578063a89e834314610158578063b7c4c13d14610183575b600080fd5b34801561007e57600080fd5b506100876101ae565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100c75780820151818401526020810190506100ac565b50505050905090810190601f1680156100f45780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561010e57600080fd5b50610117610250565b6040518082815260200191505060405180910390f35b34801561013957600080fd5b5061014261025a565b6040518082815260200191505060405180910390f35b34801561016457600080fd5b5061016d610264565b6040518082815260200191505060405180910390f35b34801561018f57600080fd5b5061019861026e565b6040518082815260200191505060405180910390f35b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102465780601f1061021b57610100808354040283529160200191610246565b820191906000526020600020905b81548152906001019060200180831161022957829003601f168201915b5050505050905090565b6000600354905090565b6000600254905090565b6000600454905090565b600060015490509056fea165627a7a72305820e1c9c2daeb8e030c391cff483ef1a62dd10ed4f710ac751ff7e9aef95d580caa0029",
+  "sourceMap": "53:61:12:-;;;264:257:9;;;;;;;;;;;;;;;;;;92:1:12;95:2;99:1;102;383:4:9;375:5;:12;;;;;;;;;;;;:::i;:::-;;408:6;398:7;:16;;;;442:13;425:14;:30;;;;475:5;466:6;:14;;;;504:9;491:10;:22;;;;264:257;;;;;53:61:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "53:61:12:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;529:84:9;;8:9:-1;5:2;;;30:1;27;20:12;5:2;529:84:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;529:84:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;809:77;;8:9:-1;5:2;;;30:1;27;20:12;5:2;809:77:9;;;;;;;;;;;;;;;;;;;;;;;722:79;;8:9:-1;5:2;;;30:1;27;20:12;5:2;722:79:9;;;;;;;;;;;;;;;;;;;;;;;894:85;;8:9:-1;5:2;;;30:1;27;20:12;5:2;894:85:9;;;;;;;;;;;;;;;;;;;;;;;621:93;;8:9:-1;5:2;;;30:1;27;20:12;5:2;621:93:9;;;;;;;;;;;;;;;;;;;;;;;529:84;568:13;600:5;593:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;529:84;:::o;809:77::-;849:4;872:6;;865:13;;809:77;:::o;722:79::-;763:4;786:7;;779:14;;722:79;:::o;894:85::-;938:4;961:10;;954:17;;894:85;:::o;621:93::-;669:4;692:14;;685:21;;621:93;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"../Skill.sol\";\r\n\r\ncontract Fireball is Skill(\"Fireball\", 1, 15, 2, 2){\r\n    \r\n}",
+  "sourcePath": "C:\\Users\\Yichun\\Documents\\Projects\\Programming\\ethereum-game\\contracts\\Skills\\Fireball.sol",
   "ast": {
-    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spells/Fireball.sol",
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Skills/Fireball.sol",
     "exportedSymbols": {
       "Fireball": [
-        264
+        950
       ]
     },
-    "id": 265,
+    "id": 951,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 260,
+        "id": 941,
         "literals": [
           "solidity",
           "^",
@@ -26,72 +97,163 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:10"
+        "src": "0:23:12"
       },
       {
-        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spell.sol",
-        "file": "../Spell.sol",
-        "id": 261,
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Skill.sol",
+        "file": "../Skill.sol",
+        "id": 942,
         "nodeType": "ImportDirective",
-        "scope": 265,
-        "sourceUnit": 247,
-        "src": "27:22:10",
+        "scope": 951,
+        "sourceUnit": 918,
+        "src": "27:22:12",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "baseContracts": [
           {
-            "arguments": null,
+            "arguments": [
+              {
+                "argumentTypes": null,
+                "hexValue": "4669726562616c6c",
+                "id": 944,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "80:10:12",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_stringliteral_3970d7cd2b0c2eaa63572cc6e27c20bb6d9aa772b9cbd2c37120f1ae7b9ded50",
+                  "typeString": "literal_string \"Fireball\""
+                },
+                "value": "Fireball"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "31",
+                "id": 945,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "92:1:12",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_1_by_1",
+                  "typeString": "int_const 1"
+                },
+                "value": "1"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "3135",
+                "id": 946,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "95:2:12",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_15_by_1",
+                  "typeString": "int_const 15"
+                },
+                "value": "15"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "32",
+                "id": 947,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "99:1:12",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_2_by_1",
+                  "typeString": "int_const 2"
+                },
+                "value": "2"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "32",
+                "id": 948,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "102:1:12",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_2_by_1",
+                  "typeString": "int_const 2"
+                },
+                "value": "2"
+              }
+            ],
             "baseName": {
               "contractScope": null,
-              "id": 262,
-              "name": "Spell",
+              "id": 943,
+              "name": "Skill",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 246,
-              "src": "74:5:10",
+              "referencedDeclaration": 917,
+              "src": "74:5:12",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Spell_$246",
-                "typeString": "contract Spell"
+                "typeIdentifier": "t_contract$_Skill_$917",
+                "typeString": "contract Skill"
               }
             },
-            "id": 263,
+            "id": 949,
             "nodeType": "InheritanceSpecifier",
-            "src": "74:5:10"
+            "src": "74:30:12"
           }
         ],
         "contractDependencies": [
-          246
+          917
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 264,
+        "id": 950,
         "linearizedBaseContracts": [
-          264,
-          246
+          950,
+          917
         ],
         "name": "Fireball",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 265,
-        "src": "53:36:10"
+        "scope": 951,
+        "src": "53:61:12"
       }
     ],
-    "src": "0:89:10"
+    "src": "0:114:12"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spells/Fireball.sol",
+    "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Skills/Fireball.sol",
     "exportedSymbols": {
       "Fireball": [
-        264
+        950
       ]
     },
-    "id": 265,
+    "id": 951,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 260,
+        "id": 941,
         "literals": [
           "solidity",
           "^",
@@ -99,59 +261,150 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:10"
+        "src": "0:23:12"
       },
       {
-        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spell.sol",
-        "file": "../Spell.sol",
-        "id": 261,
+        "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Skill.sol",
+        "file": "../Skill.sol",
+        "id": 942,
         "nodeType": "ImportDirective",
-        "scope": 265,
-        "sourceUnit": 247,
-        "src": "27:22:10",
+        "scope": 951,
+        "sourceUnit": 918,
+        "src": "27:22:12",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "baseContracts": [
           {
-            "arguments": null,
+            "arguments": [
+              {
+                "argumentTypes": null,
+                "hexValue": "4669726562616c6c",
+                "id": 944,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "80:10:12",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_stringliteral_3970d7cd2b0c2eaa63572cc6e27c20bb6d9aa772b9cbd2c37120f1ae7b9ded50",
+                  "typeString": "literal_string \"Fireball\""
+                },
+                "value": "Fireball"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "31",
+                "id": 945,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "92:1:12",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_1_by_1",
+                  "typeString": "int_const 1"
+                },
+                "value": "1"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "3135",
+                "id": 946,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "95:2:12",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_15_by_1",
+                  "typeString": "int_const 15"
+                },
+                "value": "15"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "32",
+                "id": 947,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "99:1:12",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_2_by_1",
+                  "typeString": "int_const 2"
+                },
+                "value": "2"
+              },
+              {
+                "argumentTypes": null,
+                "hexValue": "32",
+                "id": 948,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "102:1:12",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_2_by_1",
+                  "typeString": "int_const 2"
+                },
+                "value": "2"
+              }
+            ],
             "baseName": {
               "contractScope": null,
-              "id": 262,
-              "name": "Spell",
+              "id": 943,
+              "name": "Skill",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 246,
-              "src": "74:5:10",
+              "referencedDeclaration": 917,
+              "src": "74:5:12",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Spell_$246",
-                "typeString": "contract Spell"
+                "typeIdentifier": "t_contract$_Skill_$917",
+                "typeString": "contract Skill"
               }
             },
-            "id": 263,
+            "id": 949,
             "nodeType": "InheritanceSpecifier",
-            "src": "74:5:10"
+            "src": "74:30:12"
           }
         ],
         "contractDependencies": [
-          246
+          917
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 264,
+        "id": 950,
         "linearizedBaseContracts": [
-          264,
-          246
+          950,
+          917
         ],
         "name": "Fireball",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 265,
-        "src": "53:36:10"
+        "scope": 951,
+        "src": "53:61:12"
       }
     ],
-    "src": "0:89:10"
+    "src": "0:114:12"
   },
   "compiler": {
     "name": "solc",
@@ -159,7 +412,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-11T22:28:17.028Z",
+  "updatedAt": "2019-01-13T08:05:18.546Z",
   "devdoc": {
     "methods": {}
   },

@@ -9,18 +9,25 @@ contract Class{
     uint private _intelligence;
     uint private _strength;
 
+    uint private _class;
+
     Skill[] internal _skills;
 
-    constructor(string memory name, uint hitPoints, uint agility, uint intelligence, uint strength) public{
+    constructor(string memory name, uint hitPoints, uint agility, uint intelligence, uint strength, uint class) public{
         _name = name;
         _hitPoints = hitPoints;
         _agility = agility;
         _intelligence = intelligence;
         _strength = strength;
+        _class = class;
     }
 
     function getName() public view returns (string memory){
         return _name;
+    }
+
+    function getClass() public view returns(uint){
+        return _class;
     }
 
     function getHitPoints() public view returns (uint){
