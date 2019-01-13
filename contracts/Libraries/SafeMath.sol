@@ -1,5 +1,7 @@
 pragma solidity ^0.5.0;
 
+//this script is written by willitscale
+
 /**
  * @title SafeMath
  * @dev Math operations with safety checks that revert on error
