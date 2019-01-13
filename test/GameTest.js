@@ -7,6 +7,8 @@ const PROVIDED_CLASS = "Barbarian";
 
 contract("Game", (accounts) => {
     let creatorAccount = accounts[0];
+    let characterAccount = accounts[1];
+
     /* note to self:
     "it" is used for the Jasmine testing framework
     "accounts" stores all Ethereum accounts
@@ -49,15 +51,12 @@ contract("Game", (accounts) => {
             .then(instance => {
                 _game = instance;
                 return _game.createCharacter(PROVIDED_NAME, PROVIDED_CLASS, { from: characterAccount });
-            })
-            .then(() => {
+            }).then(() => {
                 return _game.getCharacter({ from: characterAccount });
-            })
-            .then(instance => {
+            }).then(instance => {
                 _character = Character.at(instance);
                 return _character.setStrength(200, { from: characterAccount });
-            })
-            .catch(error => {
+            }).catch(error => {
                 assert.equal(
                     error.message,
                     "VM Exception while processing transaction: revert Request did not come from the game",
