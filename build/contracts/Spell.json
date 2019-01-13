@@ -3,22 +3,22 @@
   "abi": [],
   "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820d7877a42dda287137bad5d3a4b174209bfca075711ec70ad5fe51144f8ba632e0029",
   "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820d7877a42dda287137bad5d3a4b174209bfca075711ec70ad5fe51144f8ba632e0029",
-  "sourceMap": "27:24:7:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:24:7;;;;;;;",
-  "deployedSourceMap": "27:24:7:-;;;;;",
+  "sourceMap": "27:24:8:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:24:8;;;;;;;",
+  "deployedSourceMap": "27:24:8:-;;;;;",
   "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Spell{\r\n    \r\n}",
   "sourcePath": "C:\\Users\\Yichun\\Documents\\Projects\\Programming\\ethereum-game\\contracts\\Spell.sol",
   "ast": {
     "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spell.sol",
     "exportedSymbols": {
       "Spell": [
-        364
+        649
       ]
     },
-    "id": 365,
+    "id": 650,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 363,
+        "id": 648,
         "literals": [
           "solidity",
           "^",
@@ -26,7 +26,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:7"
+        "src": "0:23:8"
       },
       {
         "baseContracts": [],
@@ -34,31 +34,31 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 364,
+        "id": 649,
         "linearizedBaseContracts": [
-          364
+          649
         ],
         "name": "Spell",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 365,
-        "src": "27:24:7"
+        "scope": 650,
+        "src": "27:24:8"
       }
     ],
-    "src": "0:51:7"
+    "src": "0:51:8"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/Yichun/Documents/Projects/Programming/ethereum-game/contracts/Spell.sol",
     "exportedSymbols": {
       "Spell": [
-        364
+        649
       ]
     },
-    "id": 365,
+    "id": 650,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 363,
+        "id": 648,
         "literals": [
           "solidity",
           "^",
@@ -66,7 +66,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:7"
+        "src": "0:23:8"
       },
       {
         "baseContracts": [],
@@ -74,18 +74,18 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 364,
+        "id": 649,
         "linearizedBaseContracts": [
-          364
+          649
         ],
         "name": "Spell",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 365,
-        "src": "27:24:7"
+        "scope": 650,
+        "src": "27:24:8"
       }
     ],
-    "src": "0:51:7"
+    "src": "0:51:8"
   },
   "compiler": {
     "name": "solc",
@@ -93,7 +93,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-12T17:48:13.292Z",
+  "updatedAt": "2019-01-13T06:11:25.647Z",
   "devdoc": {
     "methods": {}
   },

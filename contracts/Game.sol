@@ -16,6 +16,12 @@ contract Game{
         _; //this returns the flow of execution to the original function that is annotated (condition-orientated programming)
     }
 
+    //this check if character exists for the address
+    modifier hasCharacter{
+        require(_characters[msg.sender].isExist() == 1, "Character does not exist for address");
+        _;
+    }
+
     constructor() public{
         _owner = msg.sender;
     }
